@@ -8,7 +8,23 @@
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 
 		<title>Lauren Chapman</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+var  mn = $(".nav");
+    mns = "nav-scroll";
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > 300px ) {
+    mn.addClass(mns);
+  } else {
+    mn.removeClass(mns);
+  }
+});
+	</script>
+		
 	</head>
+		
+	
+	
 	<body>
 		<div class="container">
 			<div class="nav">
