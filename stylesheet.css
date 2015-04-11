@@ -140,9 +140,10 @@ a {
 	width:100%;
 	padding:200px 0px;
 	background-image:url('assets/web.png');
-	background-size:120%;
+	background-size:150%;
 	background-attachment:fixed;
 	background-position:center;
+	background-repeat:none;
 	text-align:right;
 	font-family: 'Droid Sans', sans-serif;
 }
@@ -172,9 +173,10 @@ a {
 	width:100%;
 	padding:200px 0px;
 	background-image:url('assets/broadcast.png');
-	background-size:100%;
+	background-size:150%;
 	background-attachment:fixed;
 	background-position:center;
+	background-repeat:none;
 	text-align:right;
 	font-family: 'Droid Sans', sans-serif;
 }
@@ -188,9 +190,10 @@ a {
 	width:100%;
 	padding:200px 0px;
 	background-image:url('assets/design.png');
-	background-size:100%;
+	background-size:150%;
 	background-attachment:fixed;
 	background-position:center;
+	background-repeat:none;
 	text-align:right;
 	font-family: 'Droid Sans', sans-serif;
 }
