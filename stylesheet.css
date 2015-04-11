@@ -7,9 +7,10 @@ body {
 	width:100%;
 	padding:300px 0px 100px 0px;
 	background-image:url('assets/logo.png');
-	background-size:100%;
+	background-size:200%;
 	background-attachment:fixed;
 	background-position:center;
+	background-repeat:none;
 	text-align:right;
 	top:0px;
 	font-family: 'Droid Sans', sans-serif;
