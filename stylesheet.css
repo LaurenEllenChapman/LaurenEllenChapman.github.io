@@ -293,4 +293,7 @@ aside {
 	font-size: .5em;
 	z-index:10;
 }
+iframe {
+	height:250px;
+}
 }
