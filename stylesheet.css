@@ -140,7 +140,7 @@ a {
 	width:100%;
 	padding:200px 0px;
 	background-image:url('assets/web.png');
-	background-size:100%;
+	background-size:150%;
 	background-position:center;
 	background-repeat:none;
 	text-align:right;
@@ -156,7 +156,7 @@ a {
 	width:100%;
 	padding:200px 0px;
 	background-image:url('assets/print.png');
-	background-size:100%;
+	background-size:150%;
 	background-position:center;
 	background-repeat:none;
 	text-align:right;
@@ -172,7 +172,7 @@ a {
 	width:100%;
 	padding:200px 0px;
 	background-image:url('assets/broadcast.png');
-	background-size:100%;
+	background-size:150%;
 	background-position:center;
 	background-repeat:none;
 	text-align:right;
@@ -188,7 +188,7 @@ a {
 	width:100%;
 	padding:200px 0px;
 	background-image:url('assets/design.png');
-	background-size:100%;
+	background-size:150%;
 	background-position:center;
 	background-repeat:none;
 	text-align:right;
@@ -199,4 +199,80 @@ a {
 	color:#ffffff;
 	padding-right:150px;
 }
+aside {
+	float:left;
+	padding:15px;
+	width:400px;
+}
 
+@media (max-width: 900px) {
+	
+	aside {
+		width:300px;
+	}
+
+	.content {
+		width:75%;
+	}
+}
+
+@media (max-width:800px) {
+	.design {
+	width:100%;
+	padding:150px 0px;
+	background-size:150%;
+	}
+
+	.broadcast {
+	width:100%;
+	padding:150px 0px;
+	background-size:150%;
+	}
+
+	.print {
+	width:100%;
+	padding:150px 0px;
+	background-size:150%;
+	}
+
+	.web {
+	width:100%;
+	padding:150px 0px;
+	background-size:150%;
+	}
+	.welcome {
+	width:100%;
+	padding:250px 0px 50px 0px;
+	background-size:150%;
+	}
+}
+
+@media (max-width:550px) {
+	.content {
+		width:90%;
+	}
+	h1 {
+	font-size:3em;
+	margin-top:0px;
+	margin-bottom:-15px;
+}
+
+h2 {
+	font-size:2em;
+	}
+
+h3 {
+	font-size:1em;
+	}
+
+h5 {
+	font-size:.5em;
+	}
+.design, .web, .print, .broadcast h1 {
+	color:#ffffff;
+	padding-right:75px;
+}
+aside {
+	width:100%;
+}
+}
