@@ -275,11 +275,16 @@ h5 {
 aside {
 	width:100%;
 }
-	.welcome {
+.welcome {
 	width:100%;
 	padding:100px 0px 50px 0px;
 	background-size:200%;
 	background-position: top;
 	background-attachment:none;
 	}
+.nav {
+	text-align:left;
+	font-size: .5em;
+	z-index:10;
+}
 }
