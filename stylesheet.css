@@ -280,5 +280,6 @@ aside {
 	padding:100px 0px 50px 0px;
 	background-size:200%;
 	background-position: top;
+	background-attachment:none;
 	}
 }
