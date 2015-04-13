@@ -7,7 +7,7 @@ body {
 	width:100%;
 	padding:300px 0px 100px 0px;
 	background-image:url('assets/logo.png');
-	background-size:200%;
+	background-size:150%;
 	background-attachment:fixed;
 	background-position:center;
 	background-repeat:none;
@@ -37,7 +37,7 @@ body {
 
 .nav {
 	width: 100%;
-	padding:10px 0 px;
+	padding:10px 5px;
 	text-align:center;
 	z-index:10;
 	top:0;
@@ -141,7 +141,6 @@ a {
 	padding:200px 0px;
 	background-image:url('assets/web.png');
 	background-size:150%;
-	background-attachment:fixed;
 	background-position:center;
 	background-repeat:none;
 	text-align:right;
@@ -157,8 +156,7 @@ a {
 	width:100%;
 	padding:200px 0px;
 	background-image:url('assets/print.png');
-	background-size:200%;
-	background-attachment:fixed;
+	background-size:150%;
 	background-position:center;
 	background-repeat:none;
 	text-align:right;
@@ -175,7 +173,6 @@ a {
 	padding:200px 0px;
 	background-image:url('assets/broadcast.png');
 	background-size:150%;
-	background-attachment:fixed;
 	background-position:center;
 	background-repeat:none;
 	text-align:right;
@@ -192,7 +189,6 @@ a {
 	padding:200px 0px;
 	background-image:url('assets/design.png');
 	background-size:150%;
-	background-attachment:fixed;
 	background-position:center;
 	background-repeat:none;
 	text-align:right;
