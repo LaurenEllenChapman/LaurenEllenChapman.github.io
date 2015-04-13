@@ -214,6 +214,9 @@ aside {
 	.content {
 		width:75%;
 	}
+	iframe {
+		height:375px;
+	}
 }
 
 @media (max-width:800px) {
@@ -244,6 +247,9 @@ aside {
 	width:100%;
 	padding:250px 0px 50px 0px;
 	background-size:150%;
+	}
+	iframe {
+		height:300px;
 	}
 }
 
