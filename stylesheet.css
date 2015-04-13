@@ -7,7 +7,7 @@ body {
 	width:100%;
 	padding:300px 0px 100px 0px;
 	background-image:url('assets/logo.png');
-	background-size:150%;
+	background-size:100%;
 	background-attachment:fixed;
 	background-position:center;
 	background-repeat:none;
@@ -140,7 +140,7 @@ a {
 	width:100%;
 	padding:200px 0px;
 	background-image:url('assets/web.png');
-	background-size:150%;
+	background-size:100%;
 	background-position:center;
 	background-repeat:none;
 	text-align:right;
@@ -148,7 +148,7 @@ a {
 }
 
 .web h1 {
-	color:#000;
+	color:#ffffff;
 	padding-right:150px;
 }
 
@@ -156,7 +156,7 @@ a {
 	width:100%;
 	padding:200px 0px;
 	background-image:url('assets/print.png');
-	background-size:150%;
+	background-size:100%;
 	background-position:center;
 	background-repeat:none;
 	text-align:right;
@@ -164,7 +164,7 @@ a {
 }
 
 .print h1 {
-	color:#000;
+	color:#ffffff;
 	padding-right:150px;
 }
 
@@ -172,7 +172,7 @@ a {
 	width:100%;
 	padding:200px 0px;
 	background-image:url('assets/broadcast.png');
-	background-size:150%;
+	background-size:100%;
 	background-position:center;
 	background-repeat:none;
 	text-align:right;
@@ -180,7 +180,7 @@ a {
 }
 
 .broadcast h1 {
-	color:#000;
+	color:#ffffff;
 	padding-right:150px;
 }
 
@@ -188,7 +188,7 @@ a {
 	width:100%;
 	padding:200px 0px;
 	background-image:url('assets/design.png');
-	background-size:150%;
+	background-size:100%;
 	background-position:center;
 	background-repeat:none;
 	text-align:right;
@@ -196,7 +196,7 @@ a {
 }
 
 .design h1 {
-	color:#000;
+	color:#ffffff;
 	padding-right:150px;
 }
 
