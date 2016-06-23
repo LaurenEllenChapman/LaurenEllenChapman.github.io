@@ -11,14 +11,11 @@ var columns = [{
   "data": "Location",
   "title": "Location"
 }, {
-  "data": "Zipcode",
-  "title": "Zip Code"
+  "data": "Address",
+  "title": "Address"
 }, {
   "data": "City",
   "title": "City"
-}, {
-  "data": "Meals",
-  "title": "Meals"
 }, {
   "data": "Times",
   "title": "Times"
