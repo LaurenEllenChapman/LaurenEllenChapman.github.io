@@ -89,13 +89,14 @@
             <h1>Indiana's Civil Rights data</h1><br>
             <h3>Peter Balonon-Rosen, Claire McInerny and Lauren Chapman</h3>
             <h3>Indiana Public Broadcasting</h3>
-            <p>XXX xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx</p>
-            <p>XXX xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx</p>
-            <p>XXX xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx</p>
+            <p><a href="#latino-students" onclick="location.reload()">Latino students</a></p>
+            <p><a href="#black-students" onclick="location.reload()">Black students</a></p>
+            <p><a href="#disabled-students" onclick="location.reload()">Students with disabilities</a></p>
+            <p><a href="#white-students" onclick="location.reload()">White students</a></p>
             </div>
             
-            <div class="swiper-slide">
-            <h2><b style="color:#f0882d">Hispanic students</b> account for 10 percent of Indiana's student population.</h2>
+            <div class="swiper-slide" data-hash="latino-students">
+            <h2><b style="color:#f0882d">Latino students</b> account for 10 percent of Indiana's student population.</h2>
 			<img data-src="Latino-Demographics.gif" class="swiper-lazy"/>
             </div>
             
@@ -114,7 +115,7 @@
             <img data-src="Latino-teacher.gif" class="swiper-lazy"/>
             </div>
             
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-hash="black-students">
             <h2><b style="color:#cf3f27">Black students</b> account for 12 percent of Indiana's student population.</h2>
 			<img data-src="Black-demographics.gif" class="swiper-lazy"/>
 			</div>
@@ -134,7 +135,7 @@
             <img data-src="Black-teacher.gif" class="swiper-lazy"/>
             </div>
             
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-hash="disabled-students">
             <h2><b style="color:#50b55a">Students with disabilities</b> account for 16 percent of Indiana's student population.</h2>
 			<img data-src="Black-demographics.gif" class="swiper-lazy"/>
 			<p><em>Students with disabilities include students of different races</em></p>
@@ -152,7 +153,7 @@
 			<p><em>Students with disabilities include students of different races, and are included in the same figure with their race</em></p>			
 			</div>
 			
-			<div class="swiper-slide">
+			<div class="swiper-slide" data-hash="white-students">
             <h2><b style="color:#3176bb">White students</b> account for 71 percent of Indiana's student population.</h2>
 			<img data-src="Black-demographics.gif" class="swiper-lazy"/>
 			</div>
@@ -192,6 +193,7 @@
         mousewheelControl: true,
         preloadImages: false,
         lazyLoading: true,
+        hashnav: true,
     });
     </script>
 </body>
