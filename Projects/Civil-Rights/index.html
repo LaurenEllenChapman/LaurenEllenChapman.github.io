@@ -60,6 +60,7 @@
 		color:#000;
 		padding-left: 20px;
 		padding-right: 20px;
+		text-align: left;
 	}
 	
 	.nav {
@@ -115,8 +116,13 @@
     }
     img {
     	padding-top: 20px;
-    	height: 400px;
     }
+    
+    table {
+    	border: none;
+
+    
+    
     </style>
 </head>
 <body>
@@ -124,93 +130,98 @@
     <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-hash="home">
+            <div class="splash">
             <h1>Indiana's Civil Rights data</h1><br>
             <h3>Peter Balonon-Rosen, Claire McInerny and Lauren Chapman</h3>
             <h3>Indiana Public Broadcasting</h3>
-            <p><a href="#latino-students" onclick="location.reload()">Latino students</a></p>
-            <p><a href="#black-students" onclick="location.reload()">Black students</a></p>
-            <p><a href="#disabled-students" onclick="location.reload()">Students with disabilities</a></p>
-            <p><a href="#white-students" onclick="location.reload()">White students</a></p>
-            <p>Scroll with your mousewheel or jump to a specific section on the Civil Rights data released by the Indiana Department of Education.</p>
-            </div>
+            <br>
+            <p>In Indiana, the kinds of punishments you face and how often your teacher shows up to school can be extraordinarily different, depending on your race or ability. Every two years the U.S. Department of Education collects civil rights data on all public schools and school districts in the United States. The data used here is from the 2013-14 school year.</p>
+            <p>Scroll with your mousewheel to see all of the data, or jump to a specific section listed below.</p>
             
+       		<a href="#black-students" onclick="location.reload()"><img src="CR-black.png" width="20%"/></a>
+       		<a href="#disabled-students" onclick="location.reload()"><img src="CR-disabled.png" width="20%"/></a>
+            <a href="#latino-students" onclick="location.reload()"><img src="CR-latino.png" width="20%"/></a>
+            <a href="#white-students" onclick="location.reload()"><img src="CR-white.png" width="20%"/></a>
+            
+            </div>
+            </div>
             <div class="swiper-slide" data-hash="latino-students">
             <h2><b style="color:#f0882d">Latino students</b> account for 10 percent of Indiana's student population.</h2>
-			<img data-src="Latino-Demographics.gif" class="swiper-lazy"/>
+			<img data-src="Latino-Demographics.gif" class="swiper-lazy" height="400px"/>
             </div>
             
             <div class="swiper-slide">
             <h2><b style="color:#f0882d">Latino students</b> account for 10 percent of suspensions, or one out of 14 Latino students are suspended</h2>
-			<img data-src="Latino-Suspension.gif" class="swiper-lazy"/>
+			<img data-src="Latino-Suspension.gif" class="swiper-lazy" height="400px"/>
 			</div>
             
             <div class="swiper-slide">
             <h2><b style="color:#f0882d">Latino students</b> account for 9 percent of arrests, or one out of 11 arrests are a Latino student</h2>
-            <img data-src="Latino-Arrests.gif" class="swiper-lazy"/>
+            <img data-src="Latino-Arrests.gif" class="swiper-lazy" height="400px"/>
             </div>
             
             <div class="swiper-slide">
             <h2>67 percent of <b style="color:#f0882d">Latino students</b> attend schools where more than one-fifth of teachers are absent more than 10 school days a year</h2>
-            <img data-src="Latino-teacher.gif" class="swiper-lazy"/>
+            <img data-src="Latino-teacher.gif" class="swiper-lazy" height="400px"/>
             </div>
             
             <div class="swiper-slide" data-hash="black-students">
             <h2><b style="color:#cf3f27">Black students</b> account for 12 percent of Indiana's student population.</h2>
-			<img data-src="Black-demographics.gif" class="swiper-lazy"/>
+			<img data-src="Black-demographics.gif" class="swiper-lazy" height="400px"/>
 			</div>
             
             <div class="swiper-slide">
             <h2><b style="color:#cf3f27">Black students</b> account for 34 percent of suspensions, or one out of five black students are suspended</h2>
-			<img data-src="Black-suspensions.gif" class="swiper-lazy"/>
+			<img data-src="Black-suspensions.gif" class="swiper-lazy" height="400px"/>
 			</div>
             
             <div class="swiper-slide">
             <h2><b style="color:#cf3f27">Black students</b> account for 29 percent of of arrests, or one out of three arrests are a black student</h2>
-			<img data-src="Black-Arrests.gif" class="swiper-lazy"/>
+			<img data-src="Black-Arrests.gif" class="swiper-lazy" height="400px"/>
 			</div>
 			
 			<div class="swiper-slide">
             <h2>57 percent of <b style="color:#cf3f27">black students</b> attend schools where more than one-fifth of teachers are absent more than 10 school days a year</h2>
-            <img data-src="Black-teacher.gif" class="swiper-lazy"/>
+            <img data-src="Black-teacher.gif" class="swiper-lazy" height="400px"/>
             </div>
             
             <div class="swiper-slide" data-hash="disabled-students">
             <h2><b style="color:#50b55a">Students with disabilities</b> account for 16 percent of Indiana's student population.</h2>
-			<img data-src="Disabled-demographics.gif" class="swiper-lazy"/>
+			<img data-src="Disabled-demographics.gif" class="swiper-lazy" height="400px"/>
 			<p><em>Students with disabilities include students of different races</em></p>
 			</div>
             
             <div class="swiper-slide">
             <h2><b style="color:#50b55a">Students with disabilities</b> account for 30 percent of suspensions, or one out of seven students with disabilities are suspended</h2>
-			<img data-src="Disabled-suspension.gif" class="swiper-lazy"/>
+			<img data-src="Disabled-suspension.gif" class="swiper-lazy" height="400px"/>
 			<p><em>Students with disabilities include students of different races, and are included in the same figure with their race</em></p>
 			</div>
             
             <div class="swiper-slide">
             <h2><b style="color:#50b55a">Students with disabilities</b> account for 26 percent of of arrests, or one out of four arrests are a student with a disability</h2>
-			<img data-src="Disabled-arrests.gif" class="swiper-lazy"/>
+			<img data-src="Disabled-arrests.gif" class="swiper-lazy" height="400px"/>
 			<p><em>Students with disabilities include students of different races, and are included in the same figure with their race</em></p>			
 			</div>
 			
 			<div class="swiper-slide" data-hash="white-students">
             <h2><b style="color:#3176bb">White students</b> account for 71 percent of Indiana's student population.</h2>
-			<img data-src="White-demographics.gif" class="swiper-lazy"/>
+			<img data-src="White-demographics.gif" class="swiper-lazy" height="400px"/>
 			</div>
             
             <div class="swiper-slide">
             <h2><b style="color:#3176bb">White students</b> account for 46 percent of suspensions, or one out of 20 white students are suspended</h2>
-			<img data-src="White-suspension.gif" class="swiper-lazy"/>
+			<img data-src="White-suspension.gif" class="swiper-lazy" height="400px"/>
 			</div>
             
             <div class="swiper-slide">
             <h2><b style="color:#3176bb">White students</b> account for 53 percent of of arrests, or more than half of arrests are a white student</h2>
-			<img data-src="White-arrests.gif" class="swiper-lazy"/>
+			<img data-src="White-arrests.gif" class="swiper-lazy" height="400px"/>
 			</div>
 			
 			<div class="swiper-slide">
             <h2>58 percent of <b style="color:#3176bb">white students</b> attend schools where more than one-fifth of teachers are absent more than 10 school days a year</h2>
-            <img data-src="White-teacher.gif" class="swiper-lazy"/>
+            <img data-src="White-teacher.gif" class="swiper-lazy" height="400px"/>
             </div>
             
         </div>
