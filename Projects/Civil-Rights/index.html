@@ -73,11 +73,11 @@
 		padding:10px 5px;
 		text-align:center;
 		z-index:100;
-		top:0;
+		bottom:0;
 		background-color:#000;
 		font-weight: 400;
 		font-family: 'Roboto', sans-serif;
-		border-top: 0;
+		position:fixed;
 	}
 	
 	
@@ -132,7 +132,7 @@
 </head>
 <body>
 <div class="nav">
-	<a href="#home" onclick="location.reload()">Home</a>
+	<a href="#final" onclick="location.reload()">Done clicking through?</a>
 </div>
     <!-- Swiper -->
     <div class="swiper-container">
@@ -277,6 +277,16 @@
         <a href="#latino-students" onclick="location.reload()"><img src="CR-latino.png" width="20%"/></a>
         <a href="#white-students" onclick="location.reload()"><img src="CR-white.png" width="20%"/></a>
             
+            </div>
+            <div class="swiper-slide" data-hash="final">
+            <h2>These statistics play out in classrooms across Indiana.</h2>
+			<img data-src="Final.gif" class="swiper-lazy" width="60%"/>
+            </div>
+            
+            <div class="swiper-slide">
+            <h2>We're going to continue to analyze these differences.</h2>
+            <p>Write to us, <a href="mailto:pbalononrose"></a>Peter Balonon-Rosen</p>
+			<img data-src="Final.png" class="swiper-lazy" width="60%"/>
             </div>
             
         </div>
