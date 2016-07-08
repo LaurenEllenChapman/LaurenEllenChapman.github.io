@@ -78,8 +78,34 @@
 		font-weight: 400;
 		font-family: 'Roboto', sans-serif;
 		border-top: 0;
-		padding-bottom: 15 px;
 	}
+	
+	.nav1 {
+		width: 100%;
+		padding:10px 5px;
+		text-align:center;
+		z-index:100;
+		bottom:0;
+		background-color:#000;
+		font-weight: 400;
+		font-family: 'Roboto', sans-serif;
+		border-top: 0;
+		position: fixed;
+	}
+	
+	.nav1 a {
+		color: #fff;
+		padding:10px 10px;
+		text-decoration:none;
+		font-family: 'Roboto', sans-serif;
+	}
+	
+	.nav1 a: active, a:visited {
+		color: #fff;
+		padding:10px 10px;
+		text-decoration:none;
+		font-family: 'Roboto', sans-serif;
+	}	
 	
 	.nav a {
 		color: #fff;
@@ -131,7 +157,15 @@
     </style>
 </head>
 <body>
-<div class="nav"><a href="#home" onclick="location.reload()">Back to beginning</a></div>
+<div class="nav">
+	<a href="#home" onclick="location.reload()">Home</a>
+</div>
+<div class="nav1">
+	<a href="#black-students" onclick="location.reload()">Black students</a>
+	<a href="#disabled-students" onclick="location.reload()">Students with disabilities</a>
+	<a href="#latino-students" onclick="location.reload()">Latino students</a>
+	<a href="#white-students" onclick="location.reload()">White students</a>
+	</div>
     <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
