@@ -9,13 +9,13 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
  	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700,700italic,900,900italic,400italic' rel='stylesheet' type='text/css'>
-
-	<script>
-@media
-	</script>
 	<link rel="shortcut icon" href="http://i1320.photobucket.com/albums/u525/laurenellenchapman/IPBS_zpsb5bmqxji.png">	
 	</head>
-
+<script>
+$(window).on('hashchange', function() {
+        location.reload();
+});
+</script>
     <!-- Demo styles -->
 <style>
     html, body {
@@ -138,7 +138,7 @@
             <br>
             <br>
             <h3>Click on a section to go through the statistics</h3>
-       	<a onclick="javascript:location.href='http://www.laurenellenchapman.com/Projects/Civil-Rights/#blackstudents'"><img src="CR-black.png" width="20%"/></a>
+       	<a href="#blackstudents" onclick="window.location.reload()"><img src="CR-black.png" width="20%"/></a>
        	<a href="#disabled-students" onclick="window.location.reload()"><img src="CR-disabled.png" width="20%"/></a>
         <a href="#latino-students" onclick="window.location.reload()"><img src="CR-latino.png" width="20%"/></a>
         <a href="#white-students" onclick="window.location.reload()"><img src="CR-white.png" width="20%"/></a>
