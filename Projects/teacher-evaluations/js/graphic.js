@@ -8,6 +8,9 @@ var key =
 //punctuation or numbers in your column name
 //"title" is the column name you want to appear in the published table
 var columns = [{
+  "data": "District",
+  "title": "School district"
+}, {
   "data": "School",
   "title": "School"
 }, {
@@ -22,9 +25,6 @@ var columns = [{
 }, {
   "data": "Highly",
   "title": "Highly effective"
-}, {
-  "data": "Not",
-  "title": "Not rated"
 }];
  
 
