@@ -13,7 +13,8 @@ var columns = [{
 }, {
   "data": "School",
   "title": "School"
-}, {
+} 
+];
  
 
 $(document).ready(function() {
