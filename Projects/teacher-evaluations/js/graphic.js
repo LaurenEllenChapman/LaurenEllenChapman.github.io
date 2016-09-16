@@ -9,12 +9,26 @@ var key =
 //"title" is the column name you want to appear in the published table
 var columns = [{
   "data": "District",
-  "title": "School district"
+  "title": "District"
 }, {
   "data": "School",
   "title": "School"
-} 
-];
+}, {
+  "data": "Ineffective",
+  "title": "Ineffective"
+}, {
+  "data": "Improvement",
+  "title": "Needs improvement"
+}, {
+  "data": "Effective",
+  "title": "Effective"
+}, {
+  "data": "Highly",
+  "title": "Highly effective"
+}, {
+  "data": "Not",
+  "title": "Not rated"
+}];
  
 
 $(document).ready(function() {
