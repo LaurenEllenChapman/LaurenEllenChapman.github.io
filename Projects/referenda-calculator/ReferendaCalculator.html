@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+ 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700,700italic,900,900italic,400italic' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="http://i1320.photobucket.com/albums/u525/laurenellenchapman/IPBS_zpsb5bmqxji.png">	
+</head>
+<style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h2 {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    
+    table {
+    	width: 100%;
+    }
+    
+    
+</style>    
+<body>
+    <div id="wrap">
+        <table><form action="" id="form" onsubmit="return false;">
+            <tr>
+            <td><h2>Home value</h2>
+            </td>
+            <td><h2>School district</h2>
+            </td>
+            </tr>
+         	<tr>
+         	<td>
+         	<input type="number" name="input" id="input"/>
+         	</td>
+         	<td>
+    <select id="input2" name='input2' onchange="calculateTotal()">
+    <option value="None">Select district</option>
+    <option value="Clinton">Clinton Central</option>
+    <option value="Gary">Gary Community</option>
+    <option value="Mishawaka1">Mishawaka (Construction)</option>
+    <option value="Mishawaka2">Mishawaka (Tax levy)</option>
+    <option value="Monroe">Monroe County</option>
+    <option value="New Albany">New Albany-Floyd County</option>
+    <option value="NE Dubois">Northeast Dubois</option>
+    <option value="Washington1">Washington Township (Construction)</option>
+    <option value="Washington2">Washington Township (Tax levy)</option>
+    </select>
+    		</td>
+    		</tr>
+    		<tr>
+    		<td><h2>Additional property tax:</h2>
+            </td>
+    		<td>
+                <div id="output"></div>
+            </td>
+            </tr>  
+       </form>
+       </table>
+	</div><!--End of wrap-->
+<script>
+/*
+This source is shared under the terms of LGPL 3
+www.gnu.org/licenses/lgpl.html
+
+You are free to use the code in Commercial or non-commercial projects
+*/
+
+function getHomeValue ()
+{
+	var home = document.getElementById('input').value;
+	var taxDiscount = home - 45000; 
+	var taxesValue = taxDiscount * .65;
+	var homeValue = taxesValue/100;
+	
+	return homeValue;
+}
+
+ 
+ 
+ //Set up an associative array 
+ //The keys represent the filling type
+ //The value represents the cost of the filling i.e. Lemon filling is $5,Dobash filling is $9
+ //We use this this array when the user selects a filling from the form
+ var referenda= new Array();
+		referenda["None"]=0;
+		referenda["Clinton"]=.15;
+		referenda["Gary"]=.475;
+		referenda["Mishawaka1"]=.16;
+		referenda["Mishawaka2"]=.2434;
+		referenda["Monroe"]=.115;
+		referenda["New Albany"]=.21;
+		referenda["NE Dubois"]=.18;
+		referenda["Washington1"]=.2828;
+		referenda["Washington2"]=.11;
+ 
+
+//This function finds the filling price based on the 
+//drop down selection
+
+function getReferendaRate()
+{
+    var referendaRate=0;
+    //Get a reference to the form id="cakeform"
+    var theForm = document.forms["form"];
+    //Get a reference to the select id="filling"
+     var selectedRate = theForm.elements["input2"];
+     
+    //set cakeFilling Price equal to value user chose
+    //For example filling_prices["Lemon".value] would be equal to 5
+    referendaRate = referenda[selectedRate.value];
+
+    //finally we return cakeFillingPrice
+    return referendaRate;
+}
+
+        
+function calculateTotal()
+{
+    //Here we get the total price by calling our function
+    //Each function returns a number so by calling them we add the values they return together
+    var addTaxes = getHomeValue() * getReferendaRate ();
+    
+    //display the result
+    var divobj = document.getElementById('output');
+    divobj.style.display='block';
+    divobj.innerHTML = "$"+addTaxes;
+
+}
+
+</script>
+</body>
+</html>
