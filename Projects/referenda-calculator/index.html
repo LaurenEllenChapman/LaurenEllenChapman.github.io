@@ -47,7 +47,7 @@
 <body>
     <div id="wrap">
 	    <h1>Nov. 2016 Referenda calculator</h1>
-	    <p>How will proposed referenda increase your property tax?</p>
+	    <p>How will proposed referenda increase your property tax? Enter your home value, then select your school district.</p>
         <table><form action="" id="form" onsubmit="return false;">
             <tr>
             <td><h2>Home value</h2>
@@ -150,7 +150,7 @@ function calculateTotal()
     var addTaxes = getHomeValue() * getReferendaRate ();
     
     //display the result
-    var divobj = document.getElementById('output');
+    var divobj = document.getElementById('output').toFixed(2);
     divobj.style.display='block';
     divobj.innerHTML = "$"+addTaxes;
 
