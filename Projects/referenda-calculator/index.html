@@ -150,9 +150,9 @@ function calculateTotal()
     var addTaxes = getHomeValue() * getReferendaRate ();
     
     //display the result
-    var divobj = document.getElementById('output').toFixed(2);
+    var divobj = document.getElementById('output');
     divobj.style.display='block';
-    divobj.innerHTML = "$"+addTaxes;
+    divobj.innerHTML = "$"+addTaxes.toFixed(2);
 
 }
 
