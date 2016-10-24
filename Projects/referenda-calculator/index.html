@@ -19,12 +19,23 @@
         padding: 0;
     }
     
+    h1 {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 24 px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+        margin-bottom:-15px;
+        font-weight: 700;
+    }
+	
     h2 {
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 16 px;
         color:#000;
         margin: 0;
         padding: 0;
+        font-weight: 400;
     }
     
     table {
@@ -35,6 +46,8 @@
 </style>    
 <body>
     <div id="wrap">
+	    <h1>Referenda calculator</h1>
+	    <p>How will proposed referenda increase your property tax?</p>
         <table><form action="" id="form" onsubmit="return false;">
             <tr>
             <td><h2>Home value</h2>
@@ -62,9 +75,11 @@
     		</td>
     		</tr>
     		<tr>
-    		<td><h2>Additional property tax:</h2>
+    		<td colspan="2"><h2>Additional property tax:</h2>
             </td>
-    		<td>
+            </tr>
+            <tr>
+    		<td colspan="2">
                 <div id="output"></div>
             </td>
             </tr>  
