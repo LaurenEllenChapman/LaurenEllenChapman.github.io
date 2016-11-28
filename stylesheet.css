@@ -40,7 +40,7 @@ body {
 	width: 100%;
 	padding:10px 5px;
 	text-align:center;
-	z-index:10;
+	z-index:100;
 	top:0;
 	background-color:#000;
 	font-family: 'Droid Sans', sans-serif;
@@ -51,6 +51,15 @@ body {
 	position:fixed;
 	width:100%;
 	padding:300px 0px 100px 0px;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0.5;
+    z-index: 100;
+    border-top: 0;
 }
 
 .nav a {
