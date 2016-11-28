@@ -44,7 +44,7 @@ body {
 	top:0;
 	background-color:#000;
 	font-family: 'Droid Sans', sans-serif;
-	position:fixed;
+	border-top:0;
 }
 
 .nav-scroll {
