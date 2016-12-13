@@ -14,8 +14,12 @@ var columns = [{
   "data": "School",
   "title": "School"
 }, {
-  "data": "Grade",
-  "title": "Grade"
+  "data": "2015",
+  "title": "2015 Grade"
+
+}, {
+  "data": "2016",
+  "title": "2016 Grade"
 }];
  
 
