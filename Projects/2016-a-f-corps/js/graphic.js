@@ -17,11 +17,11 @@ var columns = [{
   "data": "2016",
   "title": "2016 Grade"
 }, {
-  "data": "2015",
-  "title": "2015 Grade"
-}, {
   "data": "2015 HH",
   "title": "2015 Hold Harmless"
+}, {
+  "data": "2015",
+  "title": "2015 Actual Grade"
 }];
  
 
