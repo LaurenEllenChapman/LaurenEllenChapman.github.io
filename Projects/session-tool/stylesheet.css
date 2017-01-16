@@ -1,0 +1,142 @@
+li.id {
+	list-style-type: none;
+	font-family: "Roboto Condensed", sans-serif;
+    font-size: .85em;
+    display: none;
+}
+
+li.bill {
+	list-style-type: none;
+	font-family: "Roboto Condensed", sans-serif;
+    font-size: .85em;
+    color:#000;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom:-5;
+}
+
+li.topic {
+	list-style-type: none;
+	font-family: "Roboto Condensed", sans-serif;
+    font-size: .85em;
+    color:#000;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom:-5;
+}
+
+li.headline {
+	list-style-type: none;
+	font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    color:#000;
+    font-weight: 700;
+    padding: 0;
+}
+
+li.date {
+	list-style-type: none;
+	font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    color:#000;
+    font-weight: 300;
+}
+
+li.body {
+	list-style-type: none;
+	font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    color:#000;
+    font-weight: 400;
+    white-space: pre-wrap;
+}
+
+li.edit {
+	list-style-type: none;
+	font-family: "Roboto", sans-serif;
+	padding-bottom: 20;
+}
+
+select {
+	font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    color:#000;
+    font-weight: 400;
+    width: 45%;
+    padding: 25px;
+}
+
+input {
+	font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    color:#000;
+    font-weight: 400;
+    width: 50%;
+}
+
+.sort {
+  padding:8px 30px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  color:#fff;
+  text-decoration: none;
+  background-color: #28a8e0;
+  height:30px;
+  font-family: "Roboto", sans-serif;
+  font-size: .75em;
+  font-weight: 400;
+
+}
+.sort:hover {
+  text-decoration: none;
+  background-color:#1b8aba;
+}
+.sort:focus {
+  outline:none;
+}
+.sort:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:13px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+
+.hide-btn {
+  padding:8px 10px;
+  display:inline-block;
+  color:#fff;
+  background-color: #28a8e0;
+  height:10px;
+  font-family: "Roboto", sans-serif;
+  font-size: .75em;
+  font-weight: 400;
+  border: none;
+}
