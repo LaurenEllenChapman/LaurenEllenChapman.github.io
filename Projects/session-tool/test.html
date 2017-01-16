@@ -1,344 +1,109 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700,700italic,900,900italic,400italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">	
-<link rel="shortcut icon" href="http://i1320.photobucket.com/albums/u525/laurenellenchapman/IPBS_zpsb5bmqxji.png">
-</head>
-<!--jQuery link-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-<!--List.Js link-->
+<title>Session tool</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+
+table td,
+table th {
+  padding: 5px;
+}
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js">
+</script>
+
 <script src="http://listjs.com/assets/javascripts/list.min.js"></script>
 
-<style>
-
-
-li.id {
-	list-style-type: none;
-	font-family: "Roboto Condensed", sans-serif;
-    font-size: .85em;
-    display: none;
-}
-
-li.bill {
-	list-style-type: none;
-	font-family: "Roboto Condensed", sans-serif;
-    font-size: .85em;
-    color:#000;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom:-5;
-}
-
-li.topic {
-	list-style-type: none;
-	font-family: "Roboto Condensed", sans-serif;
-    font-size: .85em;
-    color:#000;
-    text-transform: uppercase;
-    font-weight: 300;
-    margin-bottom:-5;
-}
-
-li.headline {
-	list-style-type: none;
-	font-family: "Roboto", sans-serif;
-    font-size: 2em;
-    color:#000;
-    font-weight: 700;
-    padding: 0;
-}
-
-li.date {
-	list-style-type: none;
-	font-family: "Roboto", sans-serif;
-    font-size: 1em;
-    color:#000;
-    font-weight: 300;
-}
-
-li.body {
-	list-style-type: none;
-	font-family: "Roboto", sans-serif;
-    font-size: 1em;
-    color:#000;
-    font-weight: 400;
-    white-space: pre-wrap;
-}
-
-li.edit {
-	list-style-type: none;
-	font-family: "Roboto", sans-serif;
-	padding-bottom: 20;
-}
-
-select {
-	font-family: "Roboto", sans-serif;
-    font-size: 1em;
-    color:#000;
-    font-weight: 400;
-    width: 45%;
-    padding: 25px;
-}
-
-input {
-	font-family: "Roboto", sans-serif;
-    font-size: 1em;
-    color:#000;
-    font-weight: 400;
-    width: 50%;
-}
-
-.sort {
-  padding:8px 30px;
-  border-radius: 6px;
-  border:none;
-  display:inline-block;
-  color:#fff;
-  text-decoration: none;
-  background-color: #28a8e0;
-  height:30px;
-  font-family: "Roboto", sans-serif;
-  font-size: .75em;
-  font-weight: 400;
-
-}
-.sort:hover {
-  text-decoration: none;
-  background-color:#1b8aba;
-}
-.sort:focus {
-  outline:none;
-}
-.sort:after {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  content:"";
-  position: relative;
-  top:-10px;
-  right:-5px;
-}
-.sort.asc:after {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #fff;
-  content:"";
-  position: relative;
-  top:13px;
-  right:-5px;
-}
-.sort.desc:after {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #fff;
-  content:"";
-  position: relative;
-  top:-10px;
-  right:-5px;
-}
-
-.hide-btn {
-  padding:8px 10px;
-  display:inline-block;
-  color:#fff;
-  background-color: #28a8e0;
-  height:10px;
-  font-family: "Roboto", sans-serif;
-  font-size: .75em;
-  font-weight: 400;
-  border: none;
-}
-
-</style>
-<!--Dropdown menu for topics-->
 <div id="contacts">
-	<select id="select1" class="search">
-    	<option value=" ">Select:</option>
-   		<option value="Academics">Academics</option>
-    	<option value="Funding">Funding</option>
-    	<option value="College">Higher Education</option>
-    	<option value="Boards">Local School Board</option>
-    	<option value="Misc">Micellaneous</option>
-    	<option value="Pre-K">Pre-K</option>
-    	<option value="Affairs">Student Affairs</option>
-    	<option value="Pay">Teacher Pay</option>
-    	<option value="Vouchers">School vouchers</option>
-    	<option value="Superintendent">State superintendent</option>
-	</select>
-<!--Dropdown menu for bills-->	
-<select id="select2" class="search" >
- 	<option class="Academics" value="HB 1083">HB 1083: Civics Education</option>
-	<option class="Funding" value="HB 1042">HB 1042: Allocation Of Circuit Breaker Credits By Schools</option>
- 	<option class="Funding" value="HB 1038">HB 1038: General Fund Referendum Length</option>
- 	<option class="College" value="HB 1012">HB 1012: College Tuition Statements</option>
- 	<option class="College" value="HB 1069">HB 1069: Immunizations For College Students</option>
- 	<option class="College" value="HB 1111">HB 1111: Sales Tax Exemption For College Books</option>
- 	<option class="Boards" value="HB 1131">HB 1131: Appointments To Local Boards And Commissions</option>
- 	<option class="Boards" value="HB 1082">HB 1082: Redevelopment Commission Membership</option>
- 	<option class="Boards" value="HB 1035">HB 1035: School Board Candidate Contributions</option>
- 	<option class="Pre-K" value="HB 1136">HB 1136: Latch Key Programs</option>
- 	<option class="Safety" value="HB 1079">HB 1079: Background Checks</option>
- 	<option class="Affairs" value="HB 1024">HB 1024: Prayer In School</option>
- 	<option class="Affairs" value="HB 1130">HB 1130: Protections For Student Journalists</option>
- 	<option class="Pay" value="HB 1098">HB 1098: 13th Pension Check</option>
- 	<option class="Pay" value="HB 1081">HB 1081: Teacher Salary Calculations</option>
- 	<option class="Pay" value="HB 1114">HB 1114: Teacher Salary Scales</option>
- 	<option class="Academics" value="SB 29">SB 29: Indiana History Class</option>
-	<option class="Vouchers" value="SB 30">SB 30: Voucher Info</option>
-	<option class="Safety" value="SB 34">SB 34: Background Checks</option>
-	<option class="Evaluations" value="SB 35">SB 35: Teacher Evaluation Measures</option>
-	<option class="Safety" value="SB 54">SB 54: DCS reporting</option>
-	<option class="Academics" value="SB 57">SB 57: Graduation cohort</option>
-	<option class="Safety" value="SB 61">SB 61: School Resource Officer</option>
-	<option class="Academics" value="SB 62">SB 62: Substance Abuse Program</option>
-	<option class="Academics" value="SB 66">SB 66: Health Curriculum</option>
-	<option class="Funding" value="SB 85">SB 85: Transportation Funding</option>
-	<option class="Academics" value="SB 86">SB 86: Cursive Writing</option>
-	<option class="Academics" value="SB 87">SB 87: Report Cards</option>
-	<option class="Academics" value="SB 88">SB 88: School Calendar</option>
-	<option class="Academics" value="SB 89">SB 89: Health Education</option>
-	<option class="College" value="SB 102">SB 102: Student Loan Forgiveness</option>
-	<option class="Funding" value="SB 106">SB 106: School Enrollment Count</option>
-	<option class="Misc" value="SB 108">SB 108: Various Education Matters</option>
-	<option class="Academics" value="SB 109">SB 109: Accreditation</option>
-	<option class="Academics" value="SB 111">SB 111: School Calendar</option>
-	<option class="Safety" value="SB 115">SB 115: Removal of Teacher Licenses</option>
-	<option class="Funding" value="SB 116">SB 116: Education Program Funding</option>
-	<option class="Academics" value="SB 117">SB 117: US History Class</option>
-	<option class="Funding" value="SB 148">SB 148: E. Chicago Schools</option>
-	<option class="Superintendent" value="SB 179">SB 179: Appointed Superintendent</option>
-	<option class="Misc" value="SB 182">SB 182: Superintendent Contracts</option>
-	<option class="Pre-K" value="SB 224">SB 224: Pre-K report</option>
-	<option class="Funding" value="SB 240">SB 240: School Counseling Pilot</option>
-	<option class="Funding" value="SB 248">SB 248: District Administration</option>
-	<option class="Safety" value="SB 249">SB 249: Teacher Hiring</option>
-	<option class="Academics" value="SB 250">SB 250: Graduation Rate Report</option>
-	<option class="Funding" value="SB 259">SB 259: Tax Deduction for Public School Expenses</option>
-</select> 
-<br>
-<br>
-<!--Search box-->	
-<input type="text" class="search" placeholder="Search" />
-<!--Sort by date button-->
-<button class="sort" data-sort="date">
-      Sort by date
-    </button>
-
-<!--Fake list-->
-    <div class="list">
-      <ul>
-        <li class="id">3</li>
-        <li class="bill">HB 1136</li>
-        <li class="topic">Pre-K</li>
-        <li class="headline">McCormick Announces 12-Year Plan For Pre-K Roll-Out</li>
-        <li class="date">1/3/17</li>
-        <li class="body">State Superintendent-elect Jennifer McCormick announced a comprehensive plan for rolling out universal preschool in Indiana. <p>Governor-elect Eric Holcomb says the plan looks great.</p></li>
-        <li class="edit"><button class="edit-item-btn">Edit</button><button class="remove-item-btn">Remove</button></li>
-      </ul>
-      <ul>
-        <li class="id">5</li>
-        <li class="bill">SB 224</li>
-        <li class="topic">Pre-K</li>
-        <li class="headline">Hipster Hipster Headline Hipster Vinyl</li>
-        <li class="date">1/4/17</li>
-        <li class="body">Hell of irony man braid, raw denim tattooed unicorn etsy. Latch key Lomo cold-pressed synth fashion axe photo booth portland shoreditch. <p>Crucifix tacos pinterest put a bird on it next level, messenger bag cornhole biodiesel bicycle rights cliche banjo poke. </p><p>Readymade yuccie paleo vexillologist normcore church-key celiac tousled, scenester polaroid truffaut. </p></li>
-        <li class="edit"><button class="edit-item-btn">Edit</button><button class="remove-item-btn">Remove</button></li>
-      </ul>
-      <ul>
-      	<li class="id">8</li>
-        <li class="bill">SB 108</li>
-        <li class="topic">School Funding</li>
-        <li class="headline">Karen Pence Reveals She Had Abortion At 16</li>
-        <li class="date">1/4/17</li>
-        <li class="body">Vice President-Elect Mike Pence told reporters he is aghast at his wife"s admission.<p>Karen Pence revealed her abortion 25 years ago on the Late Late Show with James Cordon.</p></li>
-        <li class="edit"><button class="edit-item-btn">Edit</button><button class="remove-item-btn">Remove</button></li>
-      </ul>
-      <ul>
-      	<li class="id">2</li>
-        <li class="bill">SB 85</li>
-        <li class="topic">School Funding</li>
-        <li class="headline">Glenda Ritz Mic Drops Final Meeting</li>
-        <li class="date">1/4/17</li>
-        <li class="body">In her final meeting with the SBOE, ousted State Superintendent Glenda Ritz told members they could shove off.<p>Ritz is planning to act as an advocate for the teachers' union with less pay.</p></li>
-        <li class="edit"><button class="edit-item-btn">Edit</button><button class="remove-item-btn">Remove</button></li>
-      </ul>
-<!--Add form-->
-	<ul id="edit-field">
-    <li class="id"><input type="hidden" id="id-field" />
-    </li>
-    <li class="bill">
-      <input type="text" id="bill-field" />
-    </li>
-    <li class="topic">  
-      <input type="text" id="topic-field" placeholder="Topic" />
-    </li>
-    <li class="headline">
-      <input type="text" id="headline-field" placeholder="Headline" />
-    </li>
-    <li class="date">
-      <input type="text" id="date-field" placeholder="Date" />
-    </li>
-    <li class="body">
-      <textarea rows="4" cols="50" id="body-field" placeholder="Body" ></textarea>
-    </li>
-    <li class="edit">
+  <table>
+    <thead>
+      <tr>
+        <th class="sort" data-sort="name">Name</th>
+        <th class="sort" data-sort="age">Age</th>
+        <th class="sort" data-sort="city">City</th>
+        <th colspan="2">
+          <input type="text" class="search" placeholder="Search contact" />
+        </th>
+      </tr>
+    </thead>
+    <tbody class="list">
+      <tr>
+        <td class="id" style="display:none;">1</td>
+        <td class="name">Jonny</td>
+        <td class="age">27</td>
+        <td class="city">Stockholm</td>
+        <td class="edit"><button class="edit-item-btn">Edit</button></td>
+        <td class="remove"><button class="remove-item-btn">Remove</button></td>
+      </tr>
+      <tr>
+        <td class="id" style="display:none;">2</td>
+        <td class="name">Jonas</td>
+        <td class="age">-132</td>
+        <td class="city">Berlin</td>
+        <td class="edit"><button class="edit-item-btn">Edit</button></td>
+        <td class="remove"><button class="remove-item-btn">Remove</button></td>
+      </tr>
+      <tr>
+        <td class="id" style="display:none;">3</td>
+        <td class="name">Gustaf</td>
+        <td class="age">-23</td>
+        <td class="city">Sundsvall</td>
+        <td class="edit"><button class="edit-item-btn">Edit</button></td>
+        <td class="remove"><button class="remove-item-btn">Remove</button></td>
+      </tr>
+      <tr>
+        <td class="id" style="display:none;">4</td>
+        <td class="name">Fredrik</td>
+        <td class="age">26</td>
+        <td class="city">Goteborg</td>
+        <td class="edit"><button class="edit-item-btn">Edit</button></td>
+        <td class="remove"><button class="remove-item-btn">Remove</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <td class="name">
+      <input type="hidden" id="id-field" />
+      <input type="text" id="name-field" placeholder="Name" />
+    </td>
+    <td class="age">
+      <input type="text" id="age-field" placeholder="Age" />
+    </td>
+    <td class="city">
+      <input type="text" id="city-field" placeholder="City" />
+    </td>
+    <td class="add">
       <button id="add-btn">Add</button>
       <button id="edit-btn">Edit</button>
-    </li>
-  </ul>
-  </div>
+    </td>
+  </table>
+
+  <p>This is just a simple example showing how to use <code>add()</code>, <code>values()</code> and <code>remove()</code>. The example have bugs (not List.js (I hope ;)) so I do not recommend copy-paste programming.</p>
 </div>
-	<button class="hide-btn">  </button>
+
+
+
+
+
+
 
 <script>
-
-// Auto-sorts list by date 
-$(document).ready(function() {
-    contactList.sort('date', { order: "desc" });
-});
-
-// Triggers interacting menus
-$("#select1").change(function() {     
-    if(typeof $(this).data("options") === "undefined"){
-        $(this).data("options",$("#select2 option").clone());
-    } 
-    var id = $(this).val();
-    var options = $(this).data("options").filter("[class=" + id + "]");
-    $("#select2").html(options);
-});
-
-$("#select1").trigger("change");
-
-
-//Original List.js structure for searchable list
 var options = {
-  valueNames: ['id', 'bill', 'topic', 'headline', 'date', 'body']
+  valueNames: ['id', 'name', 'age', 'city']
 };
 
-
 // Init list
-var contactList = new List("contacts", options);
+var contactList = new List('contacts', options);
 
-var 
-  idField = $("#id-field"),
-  billField = $("#bill-field"),
-  topicField = $("#topic-field"),
-  headlineField = $("#headline-field"),
-  dateField = $("#date-field"),
-  bodyField = $("#body-field"),
-  addBtn = $("#add-btn"),
-  editBtn = $("#edit-btn"),
-  removeBtns = $(".remove-item-btn").hide(),
-  editBtns = $(".edit-item-btn").hide(),
-  editField = $("#edit-field").hide(),
-  hideBtn = $(".hide-btn")
+var idField = $('#id-field'),
+  nameField = $('#name-field'),
+  ageField = $('#age-field'),
+  cityField = $('#city-field'),
+  addBtn = $('#add-btn'),
+  editBtn = $('#edit-btn').hide(),
+  removeBtns = $('.remove-item-btn'),
+  editBtns = $('.edit-item-btn');
 
 // Sets callbacks to the buttons in the list
 refreshCallbacks();
@@ -346,25 +111,21 @@ refreshCallbacks();
 addBtn.click(function() {
   contactList.add({
     id: Math.floor(Math.random() * 110000),
-    bill: billField.val(),
-    topic: topicField.val(),
-    headline: headlineField.val(),
-    date: dateField.val(),
-    body: bodyField.val()
+    name: nameField.val(),
+    age: ageField.val(),
+    city: cityField.val()
   });
   clearFields();
   refreshCallbacks();
 });
 
 editBtn.click(function() {
-  var item = contactList.get("id", idField.val())[0];
+  var item = contactList.get('id', idField.val())[0];
   item.values({
     id: idField.val(),
-    bill: billField.val(),
-    topic: topicField.val(),
-    headline: headlineField.val(),
-    date: dateField.val(),
-    body: bodyField.val()
+    name: nameField.val(),
+    age: ageField.val(),
+    city: cityField.val()
   });
   clearFields();
   editBtn.hide();
@@ -377,19 +138,17 @@ function refreshCallbacks() {
   editBtns = $(editBtns.selector);
 
   removeBtns.click(function() {
-    var itemId = $(this).closest('ul').find('.id').text();
+    var itemId = $(this).closest('tr').find('.id').text();
     contactList.remove('id', itemId);
   });
 
   editBtns.click(function() {
-    var itemId = $(this).closest('ul').find('.id').text();
+    var itemId = $(this).closest('tr').find('.id').text();
     var itemValues = contactList.get('id', itemId)[0].values();
     idField.val(itemValues.id);
-    billField.val(itemValues.bill);
-    topicField.val(itemValues.topic);
-    headlineField.val(itemValues.headline);
-    dateField.val(itemValues.date);
-    bodyField.val(itemValues.body);
+    nameField.val(itemValues.name);
+    ageField.val(itemValues.age);
+    cityField.val(itemValues.city);
 
     editBtn.show();
     addBtn.hide();
@@ -397,27 +156,8 @@ function refreshCallbacks() {
 }
 
 function clearFields() {
-  billField.val("");
-  topicField.val("");
-  headlineField.val("");
-  dateField.val("");
-  bodyField.val("");
+  nameField.val('');
+  ageField.val('');
+  cityField.val('');
 }
-// Password-protected "hidden" edit button
-hideBtn.click(function() {
-	var password;
-		var pass1="ipbs";
-		password=prompt("Enter Password To View Page"," ");
-		if (password==pass1) {
-		alert("Correct password, click OK to enter.") }
-		else
-		{
-		return false;
-		}
-  editBtns.toggle();
-  removeBtns.toggle();
-  $("#edit-field").toggle();
-  
-});
 </script>
-</html>
