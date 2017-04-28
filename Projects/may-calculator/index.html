@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700,700italic,900,900italic,400italic' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">	
+<link rel="shortcut icon" href="http://i1320.photobucket.com/albums/u525/laurenellenchapman/IPBS_zpsb5bmqxji.png">	
+</head>
+<style>
+    html, body {
+        position: relative;
+        height: 100%;
+        padding: 30 px;
+        margin: 30 px;
+    }
+    body {
+	font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color:#000;
+    }
+    
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16 px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+        margin-bottom:-10px;
+        font-weight: 700;
+    }
+	
+    h2 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 12 px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+        font-weight: 300;
+    }
+    
+    table {
+    	width: 100%;
+    }
+    
+    
+</style>    
+<body>
+    <div id="wrap">
+	    <h1>May 2017 referenda calculator</h1>
+	    <p>How will proposed referenda increase your property tax? Enter your home value, then select your school district.</p>
+        <table><form action="" id="form" onsubmit="return false;">
+            <tr>
+            <td><h2>HOME VALUE</h2>
+            </td>
+            <td><h2>SCHOOL DISTRICT</h2>
+            </td>
+            </tr>
+         	<tr>
+         	<td>
+         	<input type="number" name="input" id="input" onchange="calculateTotal()"/>
+         	</td>
+         	<td>
+    <select id="input2" name='input2' onchange="calculateTotal()">
+    <option value="None">Select district</option>
+    <option value="Munster1">Munster (Tax levy)</option>
+    <option value="Munster2">Munster (Construction)</option>
+    <option value="Westfield">Westfield Washington (Construction)</option>
+    <option value="Cannelton">Cannelton City Schools</option>
+    <option value="Carmel">Carmel Clay</option>
+    <option value="Lake Station">Lake Station Community Schools</option>
+    <option value="East Chicago">East Chicago Schools</option>
+    <option value="Sheridan">Sheridan Community Schools</option>
+    <option value="Tri-County">Tri-County Schools</option>
+    <option value="West Lafayette">West Lafayette Community Schools</option>
+    </select>
+    		</td>
+    		</tr>
+    		<tr>
+    		<td colspan="2"><h2>Additional property tax:</h2>
+            </td>
+            </tr>
+            <tr>
+    		<td colspan="2">
+                <div id="output"></div>
+            </td>
+            </tr>  
+       </form>
+       </table>
+	</div><!--End of wrap-->
+<script>
+/*
+This source is shared under the terms of LGPL 3
+www.gnu.org/licenses/lgpl.html
+
+You are free to use the code in Commercial or non-commercial projects
+*/
+
+function getHomeValue ()
+{
+	var home = document.getElementById('input').value;
+	var taxDiscount = home - 45000; 
+	var taxesValue = taxDiscount * .65;
+	var homeValue = taxesValue/100;
+	
+	return homeValue;
+}
+
+ 
+ 
+ //Set up an associative array 
+ //The keys represent the filling type
+ //The value represents the cost of the filling i.e. Lemon filling is $5,Dobash filling is $9
+ //We use this this array when the user selects a filling from the form
+ var referenda= new Array();
+		referenda["None"]=0;
+		referenda["Munster1"]=.42;
+		referenda["Munster2"]=.43;
+		referenda["Westfield"]=.30;
+		referenda["Cannelton"]=.41;
+		referenda["Carmel"]=.19;
+		referenda["Lake Station"]=.54;
+		referenda["East Chicago"]=.30;
+		referenda["Sheridan"]=.25;
+		referenda["Tri-County"]=.27;
+		referenda["West Lafayette"]=.37;
+
+
+//This function finds the filling price based on the 
+//drop down selection
+
+function getReferendaRate()
+{
+    var referendaRate=0;
+    //Get a reference to the form id="cakeform"
+    var theForm = document.forms["form"];
+    //Get a reference to the select id="filling"
+     var selectedRate = theForm.elements["input2"];
+     
+    //set cakeFilling Price equal to value user chose
+    //For example filling_prices["Lemon".value] would be equal to 5
+    referendaRate = referenda[selectedRate.value];
+
+    //finally we return cakeFillingPrice
+    return referendaRate;
+}
+
+        
+function calculateTotal()
+{
+    //Here we get the total price by calling our function
+    //Each function returns a number so by calling them we add the values they return together
+    var addTaxes = getHomeValue() * getReferendaRate ();
+    
+    //display the result
+    var divobj = document.getElementById('output');
+    divobj.style.display='block';
+    divobj.innerHTML = "$"+addTaxes.toFixed(2);
+
+}
+
+</script>
+</body>
+</html>
