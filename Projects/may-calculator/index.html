@@ -17,15 +17,14 @@
 	font-family: 'Roboto', sans-serif;
         font-size: 14px;
         color:#000;
-	display: table-cell;
-   	vertical-align: middle;
+	margin: auto;
     }
     
     h1 {
         font-family: 'Roboto', sans-serif;
         font-size: 16 px;
         color:#000;
-        margin: 0;
+        text-align: center;
         padding: 0;
         margin-bottom:-10px;
         font-weight: 700;
@@ -41,7 +40,12 @@
     }
     
     table {
-    	width: 100%;
+    	width: 80%;
+    	margin: auto;
+    }
+    
+    p {
+    	text-align: center;
     }
     
     
@@ -93,10 +97,8 @@
 /*
 This source is shared under the terms of LGPL 3
 www.gnu.org/licenses/lgpl.html
-
 You are free to use the code in Commercial or non-commercial projects
 */
-
 function getHomeValue ()
 {
 	var home = document.getElementById('input').value;
@@ -106,7 +108,6 @@ function getHomeValue ()
 	
 	return homeValue;
 }
-
  
  
  //Set up an associative array 
@@ -125,11 +126,8 @@ function getHomeValue ()
 		referenda["Sheridan"]=.25;
 		referenda["Tri-County"]=.27;
 		referenda["West Lafayette"]=.37;
-
-
 //This function finds the filling price based on the 
 //drop down selection
-
 function getReferendaRate()
 {
     var referendaRate=0;
@@ -141,11 +139,9 @@ function getReferendaRate()
     //set cakeFilling Price equal to value user chose
     //For example filling_prices["Lemon".value] would be equal to 5
     referendaRate = referenda[selectedRate.value];
-
     //finally we return cakeFillingPrice
     return referendaRate;
 }
-
         
 function calculateTotal()
 {
@@ -157,9 +153,7 @@ function calculateTotal()
     var divobj = document.getElementById('output');
     divobj.style.display='block';
     divobj.innerHTML = "$"+addTaxes.toFixed(2);
-
 }
-
 </script>
 </body>
 </html>
