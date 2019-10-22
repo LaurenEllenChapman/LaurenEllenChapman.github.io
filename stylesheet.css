@@ -6,7 +6,7 @@ body {
 .welcome {
 	width:100%;
 	padding:300px 0px 200px 0px;
-	background-image:url('assets/logo.png');
+	background-image:url('assets/glasses-cube.png');
 	background-size:100%;
 	background-attachment:fixed;
 	background-position:center;
@@ -42,7 +42,7 @@ body {
 	text-align:center;
 	z-index:100;
 	top:0;
-	background-color:#000;
+	background-color:#4065af;
 	font-family: 'Droid Sans', sans-serif;
 	border-top:0;
 }
@@ -96,8 +96,9 @@ h3 {
 	font-size:2em;
 	font-weight:600;
 	font-style:italic;
-	color:#fff;
+	color:#4065af;
 	margin-bottom:0px;
+	margin-top: 20px;
 	font-family: 'Droid Sans', sans-serif;
 }
 
@@ -107,6 +108,45 @@ h5 {
 	color:#fff;
 	margin-bottom:0px;
 	font-family: 'Droid Sans', sans-serif;
+}
+
+.lizzo {
+	width:125%; 
+	float:left;
+	margin-left: -100px;
+	padding: 20px;
+	position: relative;
+	
+}
+
+
+#wrapper {
+display: flex;
+}
+
+#left {
+  flex: 0 0 48%;
+  padding:10px;
+}
+
+#right {
+  flex: 1;
+  padding:10px;
+}
+
+#one {
+  flex: 0 0 30%;
+  padding:10px;
+}
+
+#two {
+  flex: 1;
+  padding:10px;
+}
+
+#three {
+  flex: 1;
+  padding:10px;
 }
 
 .main {
