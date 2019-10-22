@@ -3,6 +3,7 @@
 	<head>
 		<!--link to your stylesheet-->
 		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 		<meta name="viewport" content="width=device-width" />
 		<!--link your fonts-->
 		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
@@ -40,24 +41,24 @@ $(window).scroll(function() {
 	<body>
 		<div class="container">
 			<div class="welcome" id="home">
-				<h1>Lauren Chapman</h1>
-				<h3><a href="#web">Web.</a> <a href="#print">Report.</a> <a href="#broadcast">Video.</a> <a href="#design">Design.</a></h3>
+				<h1 class="animated fadeInUp delay-2s">Lauren Chapman</h1>
+				<h2 class="animated fadeInUp delay-2s">Digital journalist</h2>
 			</div>
 			<div class="nav">
 				<a href="#home">Home</a>
-				<a href="#web">Web.</a>
-				<a href="#print">Report.</a>
-				<a href="#broadcast">Video.</a>
-				<a href="#design">Design.</a>
+				<a href="#graphics">Interactive graphics</a>
+				<a href="#micro">Microsites</a>
+				<a href="#report">Reporting</a>
 				<a href="https://drive.google.com/file/d/1h06gTphF-mgSJLErGhvpM5xCgUA4fohB/view?usp=sharing" target="_blank">Resume</a>
 			</div>
 			<div class="main">
 				<div class="content">
-					<img src="http://farm9.staticflickr.com/8713/16513199644_9f04efaefd_b.jpg" width="100px" style="float:right; padding:15px">
-					<p>I got into journalism because my high school counselor wouldn't let me take the class I wanted to. She told me to take the newspaper class. I told her I thought journalism was stupid and fluffy.</p>
-					<p>Fast forward seven years and I'm now the digital producer for IPB News, a statewide reporting team for the NPR and PBS affiliates in Indiana.</p>
-					<p>I have the best job in the whole wide world. In addition to the nebulous job title of digital producer, I'm a radio and television reporter for the network, stepping in to assist when resources are limited.</p>
-					<div style="float:right; width:50%; padding:15px;"><b>Contact me</b><table width="50%">
+					<div style="float:right; width:40%; padding:15px;"><b>Contact me</b><table width="50%">
+						<tr>
+							<td colspan="2">
+							<img src="assets/lauren.png" width="100%"/>
+							</td>
+						</tr>
 						<tr>
 							<td>
 								<p><a href="mailto:lauren.ellen.chapman@gmail.com">
@@ -85,149 +86,108 @@ $(window).scroll(function() {
 								<td><p><a href="https://drive.google.com/file/d/1h06gTphF-mgSJLErGhvpM5xCgUA4fohB/view?usp=sharing" target="_blank">Download resume</a></p></td>
 							</tr>
 					</table></div>
-					<p>And in September 2016, I become one of the first people to implement the Public Media Platform as a content sharing and aggregation tool on all of the websites in Indiana. I've worked with the project managers at NPR for Core Publisher and PMP to make this happen and help work out some of the quirks of that roll-out.</p>
-					<p></p>
-					<b>Other interests:</b>
-					<p>I am a baseball fanatic. I've been to the Cooperstown Hall of Fame four times and watched live games in 17 major league ballparks.</p>
-					<p>I like silly animals and animal GIFs. I'm a political junkie who never wants to run for office, but is confident I'd do a great job.</p>
-					<p>I'm a giant nerd who went to Star Trek conventions as a child and was raised on Batman comic books as bedtime stories.</p>
+					<p>I got into journalism because my high school counselor wouldn't let me take the creative writing class I wanted. She instead, against my protests, signed me up for the newspaper class.&nbsp;</p>
+					<p>Fast forward seven years and I'm now the digital producer for IPB News, a statewide reporting team for the NPR and PBS affiliates in Indiana.</p>
+					<p>In September 2016, I became one of the first people in the country to implement the Public Media Platform as a daily content-sharing API among partner stations. To do that, I&rsquo;ve worked pretty closely with NPR Digital Services as their developers have worked out some of the quirks of the API and move to a new one.</p>
+					<p>I have the best job in the whole wide world. In addition to the nebulous job title of digital producer, I'm a radio and television reporter for the network, stepping in to assist when resources are limited.</p>
+					<p>I get to flex creatively almost every day and always on deadline. Below are some of my favorite recent projects highlighting information layering (using tools like Timeline.js and my own work as a programmer), microsites and some of my original reporting.</p>
+					</div>
+				<div class="content" id="graphics">
+					<h2>Interactive graphics</h2>
+					<p>This is some of my favorite work from the last five years. Simple manipulation of out-of-the-box tools like Google Maps and Timeline.js can really make for compelling illustrations of data. Sometimes, you&rsquo;re required to do way more tinkering &ndash; like building a Javascript calculator or illustrating a whiteboard explainer.</p>
+					<p>These projects had to satisfy two main requirements: they had to be good journalism (explaining what they were designed to explain) and they had to work across four different CMSs as sent through an API.&nbsp;</p>	
+				<hr>
+				<h3>School referenda explainers</h3>
+				<p>Indiana&rsquo;s public schools rely heavily on school referenda &ndash; ballot initiatives that provide additional funding for schools beyond the property tax cap. Since 2009, nearly 60 school districts have passed a referendum. These two interactive graphics &ndash; a property tax calculator and a school district map &ndash; illustrate for voters the impact of these ballot initiatives.&nbsp;</p>
+				<p>The IPB News education reporter and I brainstormed how to best illustrate some of the gaps in school funding for our audience ahead of the May 2019 election. I had make the referenda calculator for previous elections. But the school district map helped illustrate the geographic (and socioeconomic) differences for districts who can and can&rsquo;t get additional funding at the ballot box.</p>
+				<div class="lizzo">
+				<div id="wrapper">
+				<div id="left">
+					<iframe src="https://ipbs.org/projects/calculator-may19/" width="100%" height="525px" scrolling="no" frameborder="no"></iframe>
 				</div>
-				<div class="web" id="web">
-					<h1>Web.</h1>
+				<div id="right">
+					<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1zvTOdg_NMOG0MHkxvny4K7gRg4KRVPTT" width="100%" height="525"></iframe>
 				</div>
-				<div class="content">
-					<p>Since 2014, I've worked in six different CMSs and gained valuable experience in web design with some development skills to back that up. </p>
-					<p>In addition to these examples, I have a working knowledge of Google Analytics and Chartbeat.</p>
-						<h2>School referenda calculator</h2>
-					<table>	
-						<tr>
-							<td colspan="50%"><aside><iframe style="border: 1px  solid;" src="http://www.laurenellenchapman.com/Projects/referenda-calculator/index.html" width="100%" height="250px" frameborder="yes" scrolling="no" align="center"></iframe></aside></td>
-							<td colspan="50%"><p>This is one of my favorite things I've ever made, and it required a ton of math. One of the education reporters I work with said, hey, how hard would it be to make a calculator? In six hours, I told her the answer: not the worst.</p>
-									<p>In Indiana, schools have to rely on referenda after a property tax cap was put in place in 2008. As part of our election reporting, with some help from a math-y source, we had a formula and I built a Javascript calculator. </p>
-								<p><a href="http://indianapublicmedia.org/stateimpact/2016/10/21/map-7-school-referenda-novembers-ballot/" target="_blank">READ MORE</a></p>
-							</td>
-						</tr>	
-						</table>
-						<br>
-						<h2>Turbine noise distance</h2>
-						<iframe allowfullscreen="" frameborder="0" height="450px" mozallowfullscreen="" scrolling="no" src="//www.thinglink.com/card/840959405607354370" type="text/html" webkitallowfullscreen="" width="100%"></iframe></aside></td>
-						<p>I don't know if it's just me, but there's something kind of great about running around your apartment with a TASCAM in one hand and a vacuum cleaner in the other. In Indiana, traveling north toward Chicago, you run into this extraordinarily large wind farm, blanketing the entire view. But I had no idea they were noisy.</p>
-						<p>Thankfully, the energy and environment reporter I work with is pretty much game for what ever weird web thing I want to do. This is a result of that.</p> 
-						<p><a href="http://wboi.org/post/setbacks-wind-turbines-balance-economic-development-property-rights#stream/0" target="_blank">READ MORE</a></p>
-						<br>	
-						
-						<h2>2014 California State Fair winners database</h2>
-						<table>
-							<tr>
-								<td colspan="50%" align="top"><aside><img src="assets/database-cheese.PNG" width="100%"></aside></td>
-								<td colspan="50%"><p>I interned at the <em>Sacramento Bee</em> from May-July 2014. As a pat of that internship, I had the pleasure of working with the data journalist on staff. <em>The Bee</em> used an online database program called Caspio. I was able to work with journalists as a reporter and designer and worked on the appearance and usability of databases.</p>
-							<p>The California State Fair hosts food competitions each year. I worked on the beer, wine and cheese databases.</p><a href="http://www.sacbee.com/site-services/databases/article2603123.html" target="_blank">READ MORE</a></td>
-							</tr>
-						</table>
-						<h2>2016 Summer Food Service Program database</h2>
-							<iframe style="border: none;" src="http://www.laurenellenchapman.com/Projects/SFSP/" width="100%" height="750px" frameborder="no" scrolling="no" align="center"></iframe>
-							<p>Why have one database when you can have two? While the <em>Sacramento Bee</em> database was built with a program called Caspio, I wanted to learn how to build my own database.</p> 
-							<p>Using Google's API, I build this sortable database of locations to get free food during the summer for low-income families. The program coordinator reached out the health reporter I was working with and helped distribute this database to libraries in the summer.</p>
-							<p><a href="http://www.wfyi.org/news/articles/many-children-still-hungry-for-summer-food" target="_blank">READ MORE</a></p>
-							
-						<br>
-						<br>
 				</div>
-				<div class="print" id="print">
-					<h1>Reporting.</h1>
 				</div>
-				<div class="content">
-					<p>As a digital producer/web guru, I didn't imagine I would get to work as a reporter all that often.</p> 
-					<p>I was wrong.</p> 
-					<p>In Saginaw, I did behind-the-scenes reporting, pouring over documents and handing off information to reporters and anchors as information was released during the Flint water crisis. In Indianapolis, I've ended up being the general assignment reporter on a number of occasions, including protests, campaign announcements, and following around Sen. Joe Donnelly at every opportunity.</p>
-						<h2>7 Arrested After More Than 500 Gather In Anti-Trump Rally</h2>
-						<table>
-							<tr>
-							<td colspan="50%"><aside><img src="http://www.wfyi.org/files/wfyi/articles/current/rally3.jpg" width="100%"></aside></td>
-							<td colspan="50%"><p><em>I ended up being the only person available to cover this protest, and so my first professional audio story was born.</em></p>
-							<p>Saturday marked the fourth day of anti-Trump protests nationwide, including one in Indianapolis.</p>
-							<p>After the protest, two IMPD officers were hit with rocks but uninjured. Seven people were arrested, but the protest was otherwise peaceful.</p>
-							<a href="http://www.wfyi.org/news/articles/more-than-500-protest-peacefully" target="_blank">READ MORE</a></td>
-							</tr>
-						</table>
-					<br>
-						<h2>Bicyclists headed to Davis can get free train tickets back to Sacramento</h2>
-						<table>
-							<tr>
-								<td colspan="50%"><aside><img src="assets/bak2sac.PNG" width="100%"></aside></td>
-								<td colspan="50%"><p><em>I wanted to do a little bit of newswriting in addition to the digital work that I was doing in Sacramento. This story came out of a press release from a community newsletter. After tracing these businesses in Davis, I ended up with a great story about a guy who wanted to ride his bike.</em></p>
-								<p>John Swann used to commute regularly by bike from Davis to his job in Sacramento, but he'd often get a ride home.
-								</p><br><a href="http://www.sacbee.com/community/yolo/article2606255.html" target="_blank">READ MORE</a></td>
-							</tr>
-						</table>
-						<br>
-						<h2>Outstanding Senior Award controversy ignites desire for conversation on racial sensitivity at Ball State</h2>
-						<p><em>I got to write this story because of the relationships I established with social rights groups on Ball State's campus. Covering campus protests became my unofficial beat. I received a tip that the people involved in this story would be willing to talk to me. There aren't any photos with the story because the images we could have used would only have promoted one side of the story or the other. I got to approach a very sensitive story with maturity I wouldn't have had a few years ago.</em></p>
-							<p>At 10:55 a.m. March 16, students received an email from the university announcing senior journalism and telecommunications major Chloe Anagnos as the winner of the John R. Emens Outstanding Senior Award.</p>
-							<p>In fewer than two hours, senior architecture major Huy Pham posted a screenshot of that email next to a 2013 Ball State Daily News article in which Anagnos defended owning a Confederate flag. Anagnos has since thrown out the flag, but her selection triggered a social media outcry that parallels a long national debate about race.</p>
-							<br>
-							<a href="http://www.ballstatedaily.com/article/2015/03/conversation-on-racial-sensitivity" target="_blank">READ MORE</a>
-					<br>
+				<hr>
+				<h3>Whiteboard explainers</h3>
+				<p>Using a program called VideoScribe, I made my first whiteboard explainer for a feature on the Gulf of Mexico&rsquo;s dead zone, and how agricultural practices in Indiana affect it. The example here, on Indiana&rsquo;s net metering legislation, is one of my favorites.</p>
+				<iframe width="100%" height="525" src="https://www.youtube.com/embed/URDnbVf6uzo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p>Find more of my <a href="https://www.youtube.com/watch?v=hhXHo-bO70Y&list=PLEsHag5qa9Gr9jaf3oyfmCcnxe5P48E4g" target="_blank">whiteboard explainers here</a>.</p>
+				<hr>
+				<h3>2019 ILEARN scores database</h3>
+				<p>Indiana moved to a new standardized test in 2019, and these were the first scores from that change. The scores dropped from the previous standardized test, prompting lawmakers to call for changes to school funding and teacher performance calculations.&nbsp;</p>
+				<p>Our network can&rsquo;t afford something like Caspio to display data this way, so a simple Google Sheets-powered searchable database was the way to go.</p>	
+				<iframe src="https://ipbs.org/projects/2019-ilearn/index.html" width="100%" height="725px" scrolling="no" frameborder="no"></iframe>	
+				<hr>
+				<div class="lizzo">
+				<h3>Curtis Hill timeline</h3>
+				<p>The whole suite of Knightlab tools are incredible. But very few stand above the Knightlab Timeline.js project. Here&rsquo;s one of the ways we&rsquo;ve used that tool to track continuing coverage and news events.</p>
+				<iframe allowfullscreen="" frameborder="0" height="650" mozallowfullscreen="" src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1oe3JV_lIDk0CxwSHP3Ufx9Jz4EBQmMZl3pfbN8ipFKw&amp;font=Default&amp;lang=en&amp;initial_zoom=2&amp;height=650" webkitallowfullscreen="" width="100%"></iframe>
 				</div>
-				
-		
-			<div class="broadcast" id="broadcast">
-					<h1>Video.</h1>
+				<hr>
+				<h3>Executive government explainer</h3>	
+				<p>I had played around with a photo gallery Github project and wasn&rsquo;t really in love with it. It wasn&rsquo;t responsive and wasn&rsquo;t a particularly good photo gallery. After taking some of the bits and pieces of code that I liked, I finally landed on a design for a clickable explainer that I liked.</p>
+				<iframe src="https://ipbs.org/projects/executive-government/index.html" width="100%" height="825px" scrolling="no" frameborder="no"></iframe>	
+				<hr>
+				<h3>Maritza Lopez interview</h3>
+				<p>I interviewed Maritiza as part of a larger project on East Chicago&rsquo;s lead and arsenic crisis. More than 1,000 people were involuntarily relocated from a public housing complex due to environmental contamination. Maritza lives on the Superfund site in a neighborhood just east of the now demolished housing complex.&nbsp;</p>
+				<iframe width="100%" height="425" src="https://www.youtube.com/embed/EhsQPp4AYsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				
+				<p>Along with my own shooting and editing video, I also work with reporters to edit their videos.&nbsp;</p>
+			</div>
+			<div class="content" id="micro">
+				<h2>Microsites</h2>
+				<p>Single topic speciality sites are some of my favorite things to produce. As a one-person digital team, not every specialty site I pitch is feasible. They&rsquo;re time consuming work, but the finished product always becomes something special.</p>
+				<h3>East Chicago One-Year project</h3>
+				<p>After covering the lead and arsenic crisis in East Chicago, the business and environment reporters on our reporting team wanted to put together a one-hour show to update our audience on what has happened so far. I worked with them as the health reporter, digital producer, video producer and FOIA librarian to build out this project into a truly multimedia story.</p>
+				<a href="https://ipbs.org/projects/ec-oneyear/" target="_blank"><img src="assets/ec-oneyear.png" width="100%"/></a>
+				<hr>
+				<h3>U.S. Senate voting guide</h3>
+				<p>As a statewide reporting team, we cover executive government and U.S. senator races. Our government reporter has, for years, put together two-ways for every candidate in those races. But we hadn&rsquo;t come up with a creative digital presentation outside of those two-ways.&nbsp;</p>
+				<p>This is technically a microsite, but I built it so it would also function as an embeddable iframe in the two-ways he was already doing, published to station websites.</p>
+				<iframe src="https://ipbs.org/projects/senate-voting-guide/" width="100%" height="825px" frameborder="no"></iframe>
+				<hr>	
+			</div>
+			<div class="content" id="report">
+					<h2>Reporting</h2>
+			<div class="lizzo">
+				<div id="wrapper">
+				<div id="left">
+					<img src="assets/Obama4.jpg" width="100%">
+					<p>Former President Barack Obama stumps for U.S. Sen. Joe Donnelly (D-Ind.) in Gary ahead of the 2018 election. (Lauren Chapman/IPB News)</p>
 				</div>
-				<div class="content">
-					<p>I thought video was terrifying. I have shakey hands and didn't want to try doing video. Shortly after I discovered tripods and monopods, my fear of video storytelling disappeared.</p>
-					<p>Video adds such an important element to stories. It can be emotionally powerful and educational. I've incorporated feature and news video in the examples below.</p>
-					<p>In addition to these examples, I've also done a lot of work with Facebook Live, and more importantly, training others to become more comfortable with the tool.</p>
-					<h2>Equine therapy tackles addiction </h2>					
-					<iframe width="100%" height="425" src="https://www.youtube.com/embed/O-CcdN3-IZU" frameborder="0" allowfullscreen></iframe>
-					<p>This is an example of my editing skills. I work with radio reporters who are trained to shoot video. But some of them haven't quite gotten the hang of video editing. That's where I came in on this story, where seeing recovering addicts working with horses would be so illustrative for the listener.</p>
+				<div id="right">
+					<img src="assets/Thoughts+Prayers.jpg" width="100%">
+					<p>Moms Demand Action hosted a rally at the Indiana Statehouse following the Toledo and El Paso mass shootings. (Lauren Chapman/IPB News)</p>
+				</div>
+				</div>
+				<div id="wrapper">
+				<div id="left">
+					<img src="assets/Holcomb-Hogsett.jpg" width="100%">
+					<p>Democratic Mayor Joe Hogsett and Republican Gov. Eric Holcomb embrace at a memorial service for the late U.S. Sen. Richard Lugar. (Lauren Chapman/IPB News)</p>
+				</div>
+				<div id="right">
+					<img src="assets/Trump2.jpg" width="100%">
+					<p>President Donald Trump stumps for Mike Braun at Southport High School, just south of Indianapolis. (Lauren Chapman/IPB News)</p>
+				</div>
+				</div>
+			</div>
+					<p>Every so often, I&rsquo;m also a reporter. My background is more print-based, so doing a radio feature was a fear I wanted to overcome. Below are a few examples of my original reporting.</p>
+					<h3>Indiana's Religious Left</h3>
+					<p>This is actually my second NPR national feature. I covered some religious groups in the state, organizing for liberal causes like health care access, immigration and preschool. Immediately following the 2018 election, I found out they had developed a political action arm to help elect a few Democrats in contentious statehouse districts.</p>
+					<iframe src="https://www.npr.org/player/embed/673368278/674036743" width="100%" height="200" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe>
+					<p><a href="https://www.npr.org/2018/12/06/673368278/indianas-religious-left-flexes-its-political-muscle" target="_blank">Read more</a></p>
 					<hr>
-					<h2>Sacramento chefs read mean Yelp! reviews</h2>
-					<iframe width="100%" height="425" src="https://www.youtube.com/embed/hX8NtMvxO4Q" frameborder="0" allowfullscreen></iframe>
-					<p>The photo staff at <em>The Sacramento Bee</em> were generous enough to take a digital intern under their wing for improving the quality of my video work. This piece is the product of some of that generosity</p>
-					<p>The food beat reporter wanted to do a feature on the local chefs in Sacramento. So, he came to me and the features editor with the crazy idea of putting this video together. My editor thought it was quirky enough to be popular and gave her blessing.</p>
-					<p>Bonus: I learned how to motion track in Final Cut 10 for the last chef's interview.</p>
+					<h3>Erika Fierro's Deportation</h3>
+					<p>I&rsquo;m the unofficial protest reporter for our team. Erika Fierro was brought to the U.S. as a 5-year-old. After the Trump administration&rsquo;s crackdown on immigration, her husband was detained and deported, and she fought to stay in the U.S. with their two American-born children.&nbsp;</p>
+					<p>This story is from the first of a few vigils from the Indianapolis faith community to rally with her and show her support.</p>
+					<img src="assets/Erika-Fierro.JPG" width="100%"/>
+					<audio controls preload="metadata" style=" width:100%;">
+					<source src="http://indiana.drupal.publicbroadcasting.net/sites/indiana/files/201804/deportation_vigil_web.mp3" type="audio/mpeg">
+					</audio>
 					<hr>
-					<h2>Sacramento Bee's 2014 Fireworks test and review</h2>
-					<iframe width="100%" height="425" src="https://www.youtube.com/embed/wcrbLtbfJ3w" frameborder="0" allowfullscreen></iframe>
-					<p>This video was the moment I realized that I had the best internship humanly possible. <em>The Sacramento Bee</em> does a fireworks test every year, and this year they wanted a little more dynamic video.</p>
-					<p>One of the shots has served as my cell phone lock screen since the end of July. It was fun to put together.</p>
-					<p>It's not exactly hard-hitting news video, but it served a purpose for the readers of The Bee.</p>
-				</div>
-				<div class="design" id="design">
-					<h1>Design.</h1>
-				</div>
-				<div class="content">
-					<p>My first "real" job in journalism was in April 2011, when I was hired as a senior in high school to work for <em>Hoosier Basketball Magazine</em> a small, but substantial annual publication covering baketball from high school to professional in Indiana. I worked as an advertising designer and front cover designer.</p>
-					<p>What I lacked in creative freedom, I made up for in practical experience. I fell in love with designing and received a handful of awards for my work in student media.</p>
-					<p>I've broken this section into two parts: illustration and graphics, and online design.
-					<h2 style="margin-left:-30px;">Illustration, graphics</h2>
-						<h2>What is a dead zone?</h2>
-							<iframe width="100%" height="425px" src="https://www.youtube.com/embed/mdJoTokR5G4" frameborder="0" allowfullscreen></iframe>
-							<p>My managing editor saw some of my illustration work for an interactive map I built, and got this idea that she wanted to do whiteboard explainers. For a solid month, I tested out programs until I settled on Video Scribe.</p>
-							<p>This was the second whiteboard explainer I did with the energy and environment reporter – who happened to be from New Orleans. In additional to YouTube views, this video has been natively uploaded to station Facebook pages to take advantage of Facebook's algorithm preference for video.</p>
-							<a href="http://wboi.org/post/conservation-practices-have-effect-midwest-all-way-gulf-mexico" target="_blank">READ MORE</a>
-					
-						<h2>Union timeline, decline</h2>
-							<img src="http://mediad.publicbroadcasting.net/p/wbaa/files/styles/x_large/public/201610/Unions-01.png" width="100%">
-							<p>Indiana is a Right to Work state. So, when our business reporter talks about union influence in the manufacturing towns outside of the cities, she needs a lot of context to go along with it.</p>
-							<p>I was originally concerned about how this would turn out, and did a fair share of the research behind it to make it a reality. In the end, it's a compelling narrative contained in a neat place.</p>
-							<a href="http://wbaa.org/post/empower-unions-indiana-labor-targets-state-elections#stream/0" target="_blank">READ MORE</a>
-					
-					<h2 style="margin-left:-30px;">Online design</h2>
-						<h2>East Chicago Lead Crisis</h2>
-							<img src="LaurenEllenChapman.github.io/assets/EastChicago.png" width="100%">
-							<p>After covering Flint's water criss at its height, I didn't imagine I would be using all of that research again so soon. Less than six months after starting this job, I was reporting once again on lead contamination in a poor, predominantly black community.</p>
-							<p>The statewide reporting group I work with was able to cover, and continues to cover, this environmental crisis. But East Chicago, Indiana's news outlets are either Chicago news or a local newspaper behind a nine article paywall.</p>
-							<p>That is what spurred us to build this website. It's a one-stop for all the information and data we've gathered, as well as frequently asked questions and our reporting.</p>
-							<a href="http://ipbsnews.wixsite.com/eastchicagolead" target="_blank">READ MORE</a>
-					
-						
-						<h2>STATE OF THE UNIVERSITY</h2>
-							<img src="https://s3.amazonaws.com/media.bsd/18289_sotuf.png" width="100%">
-							<p><em>Unified Media at Ball State University took on its biggest collaborative project in the form of the new university president's "State of the University" address. All five student media organizations contributed content to the feature page I designed as a preview to the speech.</em></p><br><a href="http://unifiedmediadesign.com/UMDL/sotu.html" target="_blank">READ MORE</a>
-					<hr>
-					<center>This site was designed and developed by Lauren Chapman 2017</center>
+					<center><p><em>This site was designed and developed by Lauren Chapman 2019</em></p></center>
 				</div>
 			</div>
 		</div>
