@@ -4,13 +4,23 @@ body {
 }
 
 .container {
-	padding: 10px;
 	text-align: center;
+}
+.header {
+	margin: 5px;
+	text-align: left;
+}
+.header h1 {
+	margin-bottom: -15px;
+}
+
+.header h3 {
+	font-weight: 300;
 }
 
 .logo {
 	width:28%; 
-	padding: 10px;
+	margin: 5px;
 	position: relative;
 	display: inline-block;
 }
@@ -69,11 +79,20 @@ body {
 @media all and (max-width: 599px) {
 .logo {
 	width:40%; 
-	padding: 10px;
+	margin: 5px;
 	position: relative;
 	display: inline-block;
 }
 .byline {
   	font-size: 11px;
+}
+h1 {
+	font-size: 20px;
+}
+h3 {
+	font-size: 14px;
+}
+p {
+	font-size: 12px;
 }
 }
