@@ -1,0 +1,101 @@
+body {
+	margin:0px;
+	font-family: 'Roboto';
+	width: 90%;
+	margin:0 auto;
+}
+
+.container {
+	text-align: center;
+}
+.header {
+	margin: 10px;
+	text-align: left;
+}
+.header h1 {
+	margin-bottom: -15px;
+}
+
+.header h3 {
+	font-weight: 300;
+}
+
+.logo {
+	width:28%; 
+	margin: 5px;
+	position: relative;
+	display: inline-block;
+}
+.more {
+	border-radius: 25px;
+	background: #3176bb;
+  	padding: 10px;
+  	margin: 15px;
+  	width: 25%;
+}
+.more:link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.more:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.more:hover {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+.more:active {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.byline {
+	position: fixed;
+  	bottom: 0;
+  	right: 0;
+  	width:100%;
+  	background: #FFFFFF;
+  	z-index: 10;
+  	font-size: 14px;
+}
+.byline p {
+	text-align: left;
+	padding:0px 0px 0px 10px;
+}
+.byline a:link {
+	text-decoration: none;
+	color: #000000;
+}
+.byline a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+.byline a:hover {
+	text-decoration: underline;
+	color: #000000;
+}
+.byline a:active {
+	text-decoration: none;
+	color: #000000;
+}
+
+@media all and (max-width: 599px) {
+.logo {
+	width:40%; 
+	margin: 5px;
+	position: relative;
+	display: inline-block;
+}
+.byline {
+  	font-size: 11px;
+}
+h1 {
+	font-size: 20px;
+}
+h3 {
+	font-size: 14px;
+}
+p {
+	font-size: 12px;
+}
+}
