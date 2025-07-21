@@ -4,12 +4,30 @@
 		<!--link to your stylesheet-->
 		<link href="stylesheet.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 		<meta name="viewport" content="width=device-width" />
 		<!--link your fonts-->
 		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+		<!-- Link Swiper's CSS -->
+   		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
 
-		<title>Lauren Chapman</title>
+		<title>Lauren Chapman: Portfolio</title>
+		<!--getting found on the internet-->
+    <!-- for Google -->
+        <meta name="description" content="Lauren Chapman: Portfolio" />
+        <meta name="keywords" content="digital journalism lauren chapman indiana source diversity tracking" />
+
+        <meta name="author" content="Lauren Chapman" />
+        <meta name="copyright" content="Lauren Chapman" />
+        <meta name="application-name" content="Lauren Chapman: Portfolio" />
+
+        <!-- for Facebook -->          
+        <meta property="og:title" content="Lauren Chapman: Portfolio" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="assets/Lauren cracking herself up_wide-SC.jpg" />
+        <meta property="og:url" content="laurenellenchapman.com" />
+
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
 	$(document).ready(function() {
@@ -46,17 +64,17 @@ $(window).scroll(function() {
 			</div>
 			<div class="nav">
 				<a href="#home">Home</a>
-				<a href="#graphics">Interactive graphics</a>
-				<a href="#micro">Microsites</a>
-				<a href="#report">Reporting</a>
+				<a href="#work">Work</a>
+				<a href="#awards">Awards</a>
+				<a href="#contact">Contact</a>
 				<a href="https://drive.google.com/file/d/1h06gTphF-mgSJLErGhvpM5xCgUA4fohB/view?usp=sharing" target="_blank">Resume</a>
 			</div>
 			<div class="main">
 				<div class="content">
-					<div style="float:right; width:40%; padding:15px;"><b>Contact me</b><table width="50%">
+					<div class="contact_table"><table>
 						<tr>
 							<td colspan="2">
-							<img src="assets/lauren.png" width="100%"/>
+							<img src="assets/Lauren-cracks-herself-up-SC.jpg" width="100%"/>
 							</td>
 						</tr>
 						<tr>
@@ -86,16 +104,421 @@ $(window).scroll(function() {
 								<td><p><a href="https://drive.google.com/file/d/1h06gTphF-mgSJLErGhvpM5xCgUA4fohB/view?usp=sharing" target="_blank">Download resume</a></p></td>
 							</tr>
 					</table></div>
-					<p>I got into journalism because my high school counselor wouldn't let me take the creative writing class I wanted. She instead, against my protests, signed me up for the newspaper class.&nbsp;</p>
-					<p>Fast forward seven years and I'm now the digital producer for IPB News, a statewide reporting team for the NPR and PBS affiliates in Indiana.</p>
-					<p>In September 2016, I became one of the first people in the country to implement the Public Media Platform as a daily content-sharing API among partner stations. To do that, I&rsquo;ve worked pretty closely with NPR Digital Services as their developers have worked out some of the quirks of the API and move to a new one.</p>
-					<p>I have the best job in the whole wide world. In addition to the nebulous job title of digital producer, I'm a radio and television reporter for the network, stepping in to assist when resources are limited.</p>
-					<p>I get to flex creatively almost every day and always on deadline. Below are some of my favorite recent projects highlighting information layering (using tools like Timeline.js and my own work as a programmer), microsites and some of my original reporting.</p>
+					<p>Welcome to my portfolio site! My name is Lauren Chapman and I do <em>a lot</em> of funky side quests in journalism.</p>
+					<p>I got into journalism because my high school counselor wouldn't let me take the creative writing class I wanted. She instead, against my protests, signed me up for the newspaper class.</p>
+					<p>Nearly 10 years later, I ran into her covering a protest. She looked at me, sign in hand, and exclaimed, "Lauren Chapman!" I looked at her, smile across my face, and exclaimed, "You did this to me!"</p>
+					<p>I've done a little bit of everything: policy reporting, protest coverage, user-experience designer, illustration work, live radio, live television hosting, data journalism and even became an accidental source tracking expert for a free copy-and-paste tool I built.</p>
+					<div class="contact_mobile"><table>
+						<tr>
+							<td colspan="3">
+							<img src="assets/Lauren cracking herself up_wide-SC.jpg" width="100%"/>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+							<strong>Contact information:</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p><a href="mailto:lauren.ellen.chapman@gmail.com">
+									<img src="assets/email.png"></p>
+								</a>
+							</td>
+							<td>
+								<a href="https://twitter.com/laurenechapman_" target="_blank">
+									<img src="assets/twitter.png"></a>
+							</td>
+							<td>
+								<a href="https://www.linkedin.com/pub/lauren-chapman/58/758/40"  target="_blank">
+									<img src="assets/linkedin.png"></a>
+							</td>
+							
+					</tr>
+					</table></div>
+					<p>Working most recently for Indiana Public Broadcasting — a state policy reporting team for Indiana's NPR and PBS stations — has allowed me to flex creatively almost every day and always on deadline.</p>
+					<p>Please enjoy this selection of my work. And if you'd like to reach out, drop me a line!</p>
+					
+				<div id="work">
+					<span class="highlight"><h3>&nbsp;Work&nbsp;</h3></span>
+					<p>This is some of my favorite work from the last decade. Some of it is my original reporting as a digital/radio/TV polyhyphenate journalist. Some of it is the work that has filled my cup — community engagement and civic literacy. And some of it is just having the space to be creative and finding innovative ways to keep people engaged in storytelling when there are a thousand demands of our attention.</p>
+					<p>These projects had to satisfy two main requirements: they had to be good journalism (explaining what they were designed to explain) and they had to work across four different content management systems as sent through an API.&nbsp;</p>
+					<div class="accordion">
+					<button type="button" class="accordion__button">Reporting</button>
+					<div class="accordian__content">
+						<h4>Anti-LGBTQ+ policies</h4>
+						<div class="image">
+							<img src="assets/Trans-kids-are-loved-LC.jpg" alt="Students gather with signs on the steps outside of the Indiana Statehouse. The only poster not cut off by the crop says, I'll stop skipping school when you stop skipping the Climate Pact." width="100%"/>
+							<p>Lauren Chapman/IPB News</p>
+						</div>
+						<p>I started covering Indiana's anti-LGBTQ+ policies in 2022. Our education reporter at the time had left for another opportunity. And she had passed the baton to me to cover <a href="https://www.wvpe.org/indiana-news/2022-05-20/a-solution-in-search-of-a-problem-lawmakers-may-vote-to-overturn-trans-girls-sports-veto-tuesday" target="_blank">Indiana's ban on transgender girls</a> playing girls school-based sports.</p>
+						<p>During the 2023 legislative session, Indiana &mdash; like many states &mdash; proposed a slate <a href="https://www.wvpe.org/wvpe-news/2023-01-30/advocates-gather-at-the-statehouse-protest-nearly-two-dozen-anti-lgbtq-bills" target="_blank">of anti-LGBTQ+ measures</a>. I covered Indiana's gender-affirming care ban for <a href="https://www.lakeshorepublicmedia.org/2023-04-05/holcomb-signs-gender-affirming-care-ban-for-trans-youth-into-law" target="_blank">transgender youth</a> and <a href="https://www.wboi.org/2023-04-05/aclu-of-indiana-files-lawsuit-to-halt-gender-affirming-care-ban-before-it-takes-effect" target="_blank">the lawsuits</a> that followed.&nbsp;</p>
+						<p>After the legislative session ended, I wanted to explain <a href="https://www.lakeshorepublicmedia.org/2023-07-11/why-social-conservative-backlash-made-indiana-the-right-state-for-anti-lgbtq-bills" target="_blank">why these measures</a> had been proposed. By and large, the answer was a <a href="https://www.wboi.org/2023-07-10/indianas-slate-of-anti-lgbtq-bills-part-of-national-fight-over-2020-supreme-court-decision" target="_blank">2020 U.S. Supreme Court decision</a>: <em>Bostock v. Clayton County, Georgia</em>.&nbsp;</p>
+						<p>Flashforward to 2025 and <a href="https://www.wvpe.org/indiana-news/2025-03-18/idoh-halts-gender-change-requests-on-birth-records-to-comply-with-braun-executive-order" target="_blank">I&rsquo;m breaking news</a> on anti-transgender policies enacted in Indiana. My job as a reporter for Indiana Public Broadcasting was designed to be a stop-gap. I could cover just about anything as a warm body when one of the beat reporters was pulled to something else. But this is a topic that I built expertise, community trust and a well-resourced rolodex to find the nuance in policy.</p>
+
+						<hr>
+
+						<h4>COVID-19 resources, misinformation</h4>
+						<div class="image">
+							<img src="assets/Siblings with masks-LC.jpg" alt="Students gather with signs on the steps outside of the Indiana Statehouse. The only poster not cut off by the crop says, I'll stop skipping school when you stop skipping the Climate Pact." width="100%"/>
+							<p>Lauren Chapman/IPB News</p>
+						</div>
+						<p>My newsroom&rsquo;s long-time health reporter left the team for a different job in December 2019. We had hired a contract reporter for the legislative session, but that contract was set to run out in May.&nbsp;</p>
+						<p>When Indiana announced its first COVID-19 cases, I was with that contract health reporter, helping her navigate the uncharted territory. When Indiana announced its first COVID-19 deaths, <a href="https://www.lakeshorepublicmedia.org/news/2020-03-17/coronavirus-indiana-reports-first-covid-19-death-governor-takes-new-steps-to-curb-virus" target="_blank">I wrote the story</a>. I built resources <a href="https://www.wboi.org/health-science/2020-03-09/what-do-you-need-to-know-about-coronavirus-weve-got-answers#stream/0" target="_blank">on COVID-19</a>, Indiana&rsquo;s <a href="https://indianapublicradio.org/news/2020/03/can-i-go-for-a-walk-heres-what-a-stay-at-home-order-really-does/" target="_blank">Stay-At-Home orders</a> and the <a href="https://www.lakeshorepublicmedia.org/science/2020-12-14/how-will-indiana-distribute-covid-19-vaccines-heres-what-you-need-to-know" target="_blank">state&rsquo;s vaccine rollout</a>.</p>
+						<p>As Indiana reached new grim milestones &mdash; more than 25,000 dead from the virus, millions of confirmed infections &mdash; I volunteered to report on it.&nbsp;</p>
+						<p>And <a href="https://www.wboi.org/news/2021-08-30/state-health-officials-dont-take-anti-parasitic-for-animals-to-treat-covid-19" target="_blank">as misinformation</a> started to sprout up, I wanted to address it responsibly. I found ways to help epidemiologists break down some of the more complicated aspects of COVID-19 without being unapproachable. I advocated for <a href="https://www.facebook.com/share/v/1Engd56vdR/" target="_blank">Facebook Live conversations</a> about the data and the available science.</p>
+						<p>But of all the work that I&rsquo;m really proud of (and some of the work I&rsquo;d redo, given the chance), it&rsquo;s a flowchart that tops the list. I worked with our then-education reporter on a story <a href="https://indianapublicradio.org/news/2021/12/indiana-updates-k-12-school-guidance-after-cdc-offers-new-covid-19-isolation-rules/" target="_blank">about the changing guidance</a> for when students should and shouldn&rsquo;t be in classrooms. The bulleted list wasn&rsquo;t the most intuitive read. And at my core, I believe <em>most things</em> should be flowcharts. We put it together and I <a href="https://ipbs.org/projects/assets/NewSchoolCOVID-19Guidance.pdf" target="_blank">embedded a printable version</a> within the story. And then I really didn&rsquo;t think about it.</p>
+						<p>About a month later, during an interview with the health institute helping the state with gathering virus data, the director said that flowchart had been shared with everyone staffing the state&rsquo;s COVID-19 hotline. It became a resource as parents tried to figure out if their kids were safe returning to school after winter break. She said it helped answer thousands of questions.</p>
+
+						<hr>
+
+						<h4>Faith and policy</h4>
+						<div class="image">
+							<img src="assets/Erika Fierro-Faith In Indiana-LC.JPG" alt="A Mexican woman, Erika Fierro, makes the sign of the cross standing next to a Catholic monk. It's raining and the monk has a 'Faith In Indiana' sticker on his robe." width="100%"/>
+							<p>Erika Fierro attends a vigil outside of an Indianapolis immigration office in June 2019. Both she and her husband had been brought to the U.S. by their families as young children. The group Faith In Indiana worked with religious and political leaders to try and prevent her deportation. They were unsuccessful. (Lauren Chapman/IPB News)</p>
+						</div>
+						<p>I really, really enjoy reporting on the intersection of faith and policy. I find it infinitely fascinating. The different ways people connect their religious doctrine with their representative government.&nbsp;</p>
+						<p>After covering a few protests by an organization called Faith In Indiana, I saw a pattern repeated by a few other groups. While I&rsquo;m used to seeing religious conservatives &mdash; usually evangelical Christians &mdash; seeing the burgeoning religious left was something that had been underreported.&nbsp;</p>
+						<p>This was <a href="https://www.npr.org/2018/12/06/673368278/indianas-religious-left-flexes-its-political-muscle" target="_blank">my second NPR feature</a> and remains one of my favorite stories.</p>
+						<iframe src="https://www.npr.org/player/embed/673368278/674036743" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe>
+						
 					</div>
-				<div class="content" id="graphics">
-					<h2>Interactive graphics</h2>
-					<p>This is some of my favorite work from the last five years. Simple manipulation of out-of-the-box tools like Google Maps and Timeline.js can really make for compelling illustrations of data. Sometimes, you&rsquo;re required to do way more tinkering &ndash; like building a Javascript calculator or illustrating a whiteboard explainer.</p>
-					<p>These projects had to satisfy two main requirements: they had to be good journalism (explaining what they were designed to explain) and they had to work across four different CMSs as sent through an API.&nbsp;</p>	
+				</div>
+<!--Community engagement-->
+				<div class="accordion">
+				<button type="button" class="accordion__button">Community engagement</button>
+				<div class="accordian__content">
+						<h4>Legislative session resources</h4>
+						<div class="image">
+							<img src="assets/Statehouse-Winter2-LC.jpg" alt="The Indiana Statehouse's eastern entrance, as seen in winter." width="100%"/>
+							<p>Lauren Chapman/IPB News</p>
+						</div>
+						<p>Trying to follow a state&rsquo;s legislative session is hard. It&rsquo;s hard when you&rsquo;re paid to do it. It&rsquo;s infinitely harder if you&rsquo;re just a person who cares enough about representative democracy to try and stay engaged.&nbsp;</p>
+						<p>I wanted to find ways to make it a little easier. I&rsquo;ve <a href="https://indianapublicradio.org/news/2024/12/how-do-i-follow-indianas-legislative-session-heres-your-guide-to-demystify-the-process-4/" target="_blank">maintained an explainer</a> for Indiana&rsquo;s legislative session for the last nine years. It&rsquo;s the narrative version of how the process works, along with some frequently asked questions.&nbsp;</p>
+						<p>But not everyone wants to read the long version. And after hearing from members of our audience and advocates, I made <a href="https://ipbs.org/projects/assets/Session-how-to.pdf" target="_blank">a printable PDF version</a> that tries to winnow down to the most important bits without losing any of the essence.</p>
+
+						<hr>
+
+						<h4>Civically, Indiana workshops</h4>
+						<div class="image">
+							<img src="assets/Audience Two-Way packet-SC.jpg" alt="Attendees at a Civically, Indiana workshop flip through a resource packet." width="100%"/>
+							<p>Scott Cameron/IPB News</p>
+						</div>
+						<p><em>Civically, Indiana</em> is a project that I wouldn&rsquo;t have been bold enough to dream about when I was first getting started in journalism. And so, the workshop series inspired by the project is just icing on the cake.&nbsp;</p>
+						<p>The workshop series is designed to bring together lawmakers, advocates and community members to discuss how to help people better engage in the process. People who work and cover the Statehouse know that the legislative session starts basically the first business day after Sine Die. But that&rsquo;s not common knowledge, nor do most people know that there are topics to advocate for or against that early.&nbsp;</p>
+						<p>The <em>Civically, Indiana</em> workshop series was designed to help. I created packets from community-responsive reporting to help arm attendees with resources to engage in the process. We did a presentation on how the legislative session works at the beginning of the workshop. And at the end, we help make sure attendees connect with their state lawmaker and begin to build a relationship with them.</p>
+
+						<hr>
+
+						<h4>The Indiana Two-Way</h4>
+						<div class="image">
+							<img src="https://ipbs.org/projects/twoway/assets/Two-WayPhone_SQ.gif" alt="A motion graphic provides the details for the Indiana Two-Way text group. While I'd love to provide you the details, it's definitely going away, so it's not worth signing up for friends." width="100%"/>
+							<p>GRAPHIC: Lauren Chapman/IPB News</p>
+						</div>
+						<p>The <a href="https://ipbs.org/projects/twoway/" target="_blank">Indiana Two-Way</a> is an SMS text group. We send out headlines and solicit questions to inform future reporting. And we build a relationship with nearly 2,000 people in Indiana, responding to their questions, gathering their feedback and humanizing journalism.&nbsp;</p>
+						<p>I&rsquo;ve only managed the Indiana Two-Way for the last two years. And I&rsquo;ve been humbled by the experience.&nbsp;</p>
+						<p>There are a lot of characters in that group. Folks who respond every week with the latest conspiracy theory. Folks who want to pick a fight. Folks who just respond with a thumbs-up. I&rsquo;ve developed these strange, parasocial relationships with people who care enough to try and be informed. And weirdly enough, I think this is the experience that I find myself turning back to over and over again as what has made me a better journalist.&nbsp;</p>
+						<p>It&rsquo;s reaffirmed that sometimes, the best way to build trust is to make them feel like they&rsquo;re heard.</p>
+
+						<hr>
+
+						<h4>What is gender-affirming care?</h4>
+						<div class="image">
+							<img src="assets/Trans pride flag-LC.jpg" alt="A transgender pride flag is wedged into a chair at the Indiana Statehouse." width="100%"/>
+							<p>Lauren Chapman/IPB News</p>
+						</div>
+						<p>Leading up to Indiana&rsquo;s 2023 legislative session, I did a series of what we call &ldquo;listening sessions.&rdquo; They&rsquo;re on background conversations to help inform future reporting. We knew lawmakers were planning on introducing a slate of anti-LGBTQ+ measures. And while I am a gay woman, I knew my experiences weren&rsquo;t the same as every LGBTQ+ person in Indiana.&nbsp;</p>
+						<p>I spoke to transgender advocates, I spoke to gender-affirming care providers, I spoke to organizations that represented Black, Indigenous and other LGBTQ+ people of color. And I spoke to older transgender Hoosiers.&nbsp;</p>
+						<p>And what I heard over and over again was, gender-affirming care is scary because there aren&rsquo;t a lot of resources out there that explain what it is.&nbsp;</p>
+						<p>So, I put <a href="https://www.wbaa.org/2023-02-13/what-is-gender-affirming-care" target="_blank">together an explainer</a>.&nbsp;</p>
+						<p>The kindest thing I&rsquo;ve ever heard about my reporting came from this story. One of the transgender adults I spoke to said, &ldquo;Kudos to [Lauren Chapman] for this amazing piece. I got a little teary &hellip; not because it needs a trigger warning, but because I&rsquo;m so unused to seeing news pieces about the medical care that saved my life that don&rsquo;t trade in poorly sourced rumor and speculation.&rdquo;</p>
+				</div>
+			</div>
+<!--Special projects-->
+			<div class="accordion">
+				<button type="button" class="accordion__button">Special projects</button>
+				<div class="accordian__content">
+					<h4>Civically, Indiana</h4>
+						<div class="image">
+							<img src="https://npr.brightspotcdn.com/dims4/default/30e07e5/2147483647/strip/true/crop/1266x844+0+0/resize/1760x1174!/quality/90/?url=https%3A%2F%2Fnpr.brightspotcdn.com%2F3b%2F7d%2F0dfe98ae4d78aab9510904113f52%2Fsigns.jpeg" alt="Students gather with signs on the steps outside of the Indiana Statehouse. The only poster not cut off by the crop says, I'll stop skipping school when you stop skipping the Climate Pact." width="100%"/>
+							<p>FILE PHOTO: Steve Burns/WTIU</p>
+						</div>
+						<p><a href="https://ipbs.org/projects/civicallyindiana/" target="_blank"><em>Civically, Indiana</em></a> is a project that I wouldn&rsquo;t have been bold enough to dream about when I was first getting started in journalism.&nbsp;</p>
+						<p>It&rsquo;s simple enough: Lower the barrier to entry for people to engage with state government and elections.&nbsp;</p>
+						<p>The novelty of the project is how we did it. We asked. We collected thousands of questions between 2019 and the launch of the project in 2023. We answered the simple questions and the more complex questions.&nbsp;</p>
+						<p>I built a dozen digital resources <a href="https://indianapublicradio.org/news/2024/12/how-do-i-follow-indianas-legislative-session-heres-your-guide-to-demystify-the-process-4/" target="_blank">including FAQs</a>, <a href="https://ipbs.org/projects/executive-government/" target="_blank">explainer graphics</a>, <a href="https://ipbs.org/projects/assets/Ballot-tip-sheet.pdf" target="_blank">printable resources</a> and even <a href="https://ipbs.org/projects/indianalegislativetrail/" target="_blank">an Oregon Trail-style game</a>. I built the microsite and prioritized directing traffic back to our station partners.&nbsp;</p>
+						<p>I co-managed the project from May 2023 to August 2024. After that, I managed the project by myself, working with reporters to add new stories.</p>
+
+						<hr>
+
+						<h4>Media literacy project</h4>
+						<div class="image">
+							<img src="assets/Scott presents BD-RTR.jpg" alt="IPB News managing editor Scott Cameron presents to students at Ben Davis High School. Scott is a White man with dark hair and streaks of white." width="100%"/>
+							<p>Robin Tate Rockel/IPB News</p>
+						</div>
+						<p>Volunteering to be bullied by high school government students is honestly kind of on brand for me, I won&rsquo;t lie. Through a grant from Indiana Humanities, <a href="https://ipbs.org/projects/medialiteracyproject/" target="_blank">we developed resources</a> for government and social studies teachers to teach bias and misinformation.&nbsp;</p>
+						<p>During the 2023-24 school year, our team launched a pilot project of presentations to primarily high school social studies and government classes. We presented on bias, fact-checking, and how news teams work and function. Some presentations also integrated information on the First Amendment, how stories can change after publication, how culture influences news, and how journalists negotiate language and sensationalism.</p>
+
+						<hr>
+
+						<h4>Blood, Lead & Soil: A Year In East Chicago</h4>
+						<div class="image">
+							<img src="https://www.laurenellenchapman.com/assets/ec-oneyear.png" alt="A screenshot of the East Chicago one-year project." width="100%"/>
+						</div>
+						<p>In July 2016, residents in East Chicago learned of lead and arsenic contamination in the West Calumet neighborhood. Over the next year, people who lived in a public housing complex on the Superfund site were forcibly relocated, students at Carrie Gosch Elementary School were moved to an empty middle school and residents began the long, relentless process of advocating for themselves in the Environmental Protection Agency&rsquo;s remediation process.&nbsp;</p>
+						<p>The Indiana Public Broadcasting team put together an hour-long radio special in July 2017. I built <a href="https://ipbs.org/projects/ec-oneyear/" target="_blank">the microsite</a>, edited the videos and did the health reporting for the project.</p>
+
+						<hr>
+
+						<h4>Bill trackers</h4>
+						<p>One of the ways I&rsquo;ve sought to make following Indiana&rsquo;s legislative session a little bit easier is by creating a bill tracker.&nbsp;</p>
+						<p>Bill trackers aren&rsquo;t all that complicated, right? Build a site, connect it to Indiana&rsquo;s API, you&rsquo;ve got a bill tracker.&nbsp;</p>
+						<p>But I wanted to make everything a little more accessible for Hoosiers trying to follow along. <a href="https://ipbs.org/projects/2023billtracker/" target="_blank">The 2023 bill tracker</a> had a number of features: status updates, searchable database and links to previous reporting, the bill&rsquo;s page and assigned committees.</p>
+						<p>That first bill tracker won the Edward R. Murrow Award Region 7 Excellence in Innovation. I maintained bill trackers for the 2024 and <a href="https://ipbs.org/projects/2025billtracker/" target="_blank">2025 legislative sessions</a>.</p>
+
+				</div>
+			</div>
+<!--Graphic design-->
+		<div class="accordion">
+			<button type="button" class="accordion__button">Graphic design</button>
+			<div class="accordian__content">
+				<h4>Illustration</h4>
+						<img src="assets/Abortion illo_Comic book final.png" alt="Students gather with signs on the steps outside of the Indiana Statehouse. The only poster not cut off by the crop says, I'll stop skipping school when you stop skipping the Climate Pact." width="100%"/>
+						<p>My health reporter came to me with a problem. They needed primary art for a story one year into Indiana&rsquo;s near-total abortion ban. But linking the sources in the story could be potentially dangerous.&nbsp;</p>
+						<p>When coming up with an idea, we worked together. They kept pointing back to a concept <a href="https://www.ipm.org/2024-08-05/providers-patients-work-to-navigate-access-to-care-in-near-total-abortion-bans-first-year" target="_blank">highlighted in their feature</a>: providers said Indiana's law makes patients' health care more difficult when "the legislature of the state of Indiana" is also in the exam room.</p>
+						<p>I grew up a huge comic book nerd and read Golden Age Batman comics like bedtime stories. Early in our discussion, I couldn&rsquo;t help imagining an Adam West Batman-style &ldquo;KA-POW&rdquo; crashing into an exam room.&nbsp;</p>
+						<p>After a lot of back and forth, we still ended up with an illustration that doesn&rsquo;t trivialize anyone&rsquo;s beliefs on abortion. But it captures that frustration.</p>
+
+						<hr>
+
+						<h4>School referenda calculators</h4>
+						<p>School funding is complicated in Indiana. One mechanism schools districts have are school referendums. But helping people understand exactly how much those referendums would affect them gets a little <em>complicated</em>.&nbsp;</p>
+						<p>So, I did some math.&nbsp;</p>
+						<p>And then I made a calculator. The formula isn&rsquo;t super complicated. But the referenda calculators are a really good example of something I bring to all of my work. Sometimes, I don&rsquo;t know exactly how a project will work out. Sometimes, I work best when I&rsquo;m just figuring it out.&nbsp;</p>
+						<p>And sometimes, <a href="https://ipbs.org/projects/calculator-may24/" target="_blank">that&rsquo;s a calculator</a>.</p>
+						<p><iframe src="https://ipbs.org/projects/calculator-nov24/index.html" width="100%" height="450" frameborder="no"></iframe></p>
+
+						<hr>
+
+						<h4>Executive government explainers</h4>
+						<p>One of my favorite civic literacy projects is this <a href="https://ipbs.org/projects/executive-government/" target="_blank">executive government explainer</a>. Why did Indiana have a state treasurer and a state auditor? What&rsquo;s the difference between those two jobs? Other than overseeing the Senate (kind of), what does the lieutenant governor do?&nbsp;</p>
+						<p>I dug into Indiana law to pull out definitions and created a lightweight graphic to explain some of those complicated answers.</p>
+						<p><iframe src="https://ipbs.org/projects/executive-government/index.html" width="100%" height="775px" scrolling="yes" frameborder="no"></iframe></p>
+
+						<hr>
+
+						<h4>Whiteboard explainers</h4>
+						<p>I'm a visual learner. I tend to be able to make sense of topics when I have the ability to sketch out ideas. And even when making motion graphics, it's often easiest for me to sit down, squiggle some arrows and figure out what I want long before I fire up After Effects.</p>
+						<p>RSA Animate videos had long since reached the peak of their popularity, but some of the most complex issues are just easier to explain with visuals.</p>
+						<div class="video">
+							<iframe src="https://www.youtube.com/embed/videoseries?si=-l9sdTf6mhgw88bh&amp;list=PLEsHag5qa9Gr9jaf3oyfmCcnxe5P48E4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<p>I've included the full playlist of all my whiteboard explainers — I'm the only person who ever did the animation for them. And over time, they get better and better.</p>
+						<p>But the most interesting part of these videos are their staying power. One of the first videos I ever made <a href="https://youtu.be/OHpkIHbD6-M?si=pogjHwmsQKTj84n9" target="_blank">"Why does erosion happen?"</a> has been viewed more than 5,000 times. A video explaining <a href="https://youtu.be/RAP1IqMGthM?si=4Lz034sK1fUdPFqu" target="_blank">how yoga can affect your brain</a> has been viewed more than 30,000 times. Neither of these videos were in stories that performed particularly well — there's just staying power than transcends the many, many shifts in digital video consumption trends over the last decade.</p>
+			</div>
+		</div>
+<!--Photography-->
+		<div class="accordion">
+			<button type="button" class="accordion__button">Photography</button>
+			<div class="accordian__content">
+					<p>I&rsquo;ve always enjoyed photojournalism and as an unofficial protest reporter, it felt like the most respectful thing I could offer people who cared enough to show up with signs, banners and bullhorns to make their opinions known.&nbsp;</p>
+					<p>This is a small collection of the thousands of images I&rsquo;ve collected over the last decade. I&rsquo;ve had a front-row seat to some of the biggest stories in Indiana.</p>
+						<div class="gallery">
+							<iframe src="https://www.laurenellenchapman.com/photo-portfolio/" frameborder="0"></iframe>
+						</div>
+				</div>    
+		</div>
+<!--Side quests-->
+		<div class="accordion">
+			<button type="button" class="accordion__button">Side quests</button>
+			<div class="accordian__content">
+				<h4>Can you survive Indiana's legislative session?: The game</h4>
+						<div class="image">
+							<img src="assets/Session-game.png" alt="A piece of paper rests against a recycling bin. In a font reminiscent of 90s video games is written, 'Your bill has died of dysentery.'" width="100%"/>
+						</div>
+						<p>How do you make state government a little more fun? That&rsquo;s a daunting task in and of itself. Policy reporting requires a lot of nuance and context. And even the audience who desperately wants to understand how the process works has significant barriers to getting there.&nbsp;</p>
+						<p>So, <a href="https://ipbs.org/projects/indianalegislativetrail/"  target="_blank">I made it a game</a>.&nbsp;</p>
+						<p>I modeled the visual style of the game as an homage to the 1990 version of the Oregon Trail game. When a bill dies in the Indiana Statehouse, it dies of dysentery as it floats to a recycling bin. The 8-bit visuals and smooth animations she illustrated capture the attention of users as they learn about the legislative process.</p>
+						<p>But it&rsquo;s not all style. As the audience plays the game, they can interact with additional details <a href="https://ipbs.org/projects/indianalegislativetrail/hrcmte.html" target="_blank">about committee chairs</a> and <a href="https://ipbs.org/projects/indianalegislativetrail/sdhearing.html" target="_blank">how to testify</a> along with links to the community-responsive reporting from the IPB News team. And when their bill dies or is <a href="https://ipbs.org/projects/indianalegislativetrail/law.html" target="_blank">signed by the governor</a>, players have access to printable one-sheets recounting the steps and more resources on how to connect with state government.</p>
+
+						<hr>
+
+				<h4>Copy-and-paste source diversity tracker</h4>
+						<p>During the 2020 Black Lives Matter protests, I heard over and over again from news directors and journalists that &ldquo;our work speaks for itself.&rdquo; That phrase bothered me. I knew that my own experiences informed the stories I chose to cover, the people I spoke to, even the quotes I selected.&nbsp;</p>
+						<p>More and more, I grew frustrated that maybe &mdash; as journalists &mdash; we really didn&rsquo;t fully understand what our work was saying. But as a team with an extremely limited budget, many source tracking options were financially out of reach. And back then, some of those resources cost tens of thousands of dollars.</p>
+						<p><a href="https://drive.google.com/drive/folders/1Nd4KbAXOySMy3o-I3_cJqJdDaF_PldTu?usp=drive_link" target="_blank">So, I built one</a>.&nbsp;</p>
+						<p>I created a simple tool to make source tracking more accessible for newsrooms of all sizes. The copy-and-paste source tracker uses Google tools to allow for flexibility with some fairly simple spreadsheet formulas.</p>
+
+						<hr>
+
+				<h4>Indiana Week In Review</h4>
+						<p>I&rsquo;m not really the kind of person who loves being on camera. Speaking in front of an audience? Let&rsquo;s do it. I love public speaking. But television really made my skin crawl.&nbsp;</p>
+						<p>So, I volunteered to do it. When something makes me scared, I have a tendency to throw myself into it more. I&rsquo;ve hosted Indiana Week In Review a dozen times. I&rsquo;ve hosted live election night specials and post-State of the State analysis shows.&nbsp;</p>
+						<p>Admittedly, TV still makes my skin crawl a little bit. But there&rsquo;s something profoundly fun about throwing myself into something that makes me a little bit scared, and doing it anyway.</p>
+					<div class="video">
+						<p><iframe width="560" height="315" src="https://www.youtube.com/embed/B-fy4JpJhOs?si=Xs9oyURi2qfzOG-y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="awards">
+				<span class="highlight"><h3>&nbsp;Awards&nbsp;</h3></span>
+				<p>We don&rsquo;t do this work for the awards or recognition. But it doesn&rsquo;t hurt to receive it!&nbsp;</p>
+				<p>This isn&rsquo;t a comprehensive list &mdash; there are dozens of state awards and a few omitted national awards.</p>
+				<div class="container_awards">
+				<div class="awards">
+					<a href="#joy" rel="modal:open">
+				    	<img src="assets/lauren-chapman-spj.jpeg" alt="A picture of Lauren Chapman, who genuinely didn't expect to win Journalist of the Year and didn't shower before the awards ceremony." width="100%"/>
+				    	<h6>2021 Indiana Journalist of the Year</h6>
+				    </a>
+					</div>
+					<div id="joy" class="modal">
+						    <h5>2021 Indiana Journalist of the Year</h5>
+						    <p>I'm still kind of shocked that I won this award. The source diversity tracker had started to pick up national attention. I felt like I'd hit my stride with COVID-19 reporting. And I'd personally helped more than 150 Hoosiers register for their vaccine rollout.</p>
+						    <p>But it wasn't an earth-shattering investigation. That work was just the kind of thing I'd spent the previous 10 years, in some capacity, doing.</p>
+						    <p><a href="http://www.indianaprospj.org/news/2022/4/22/indy-pro-spj-celebrates-the-2021-award-winners" target="_blank">The judges notes</a>: In a very, very close competition, Lauren Chapman wins for her dogged, relevant, detailed, human coverage of Covid. It's the story that affected (and still does) almost everyone in her area, the USA and the world. From guidelines (and their changes), to tragic facts about infections and deaths, charts and maps she provided the info people needed&nbsp;&mdash; and she worked to dispel misinformation. Further, she built a digital tracker to report racial and gender groups in coverage&nbsp;&mdash; and she made it available to other reporters in the state. Her work was crisp, concise, easy to grasp.</p>
+					</div>
+
+
+				<div class="awards">
+					<a href="#slaymaker" rel="modal:open">
+				    	<img src="assets/Slaymaker award.jpg" alt="From left to right: Lisa Renze-Rhodes, Julie Slaymaker (who the award is named after), Scott Cameron (IPB News mananging editor) and Lauren Chapman. Lauren holds the Slaymaker award as all four pose for a photo." width="100%"/>
+				    	<h6>2022 Slaymaker Service to Journalism</h6>
+				    </a>
+					</div>
+					<div id="slaymaker" class="modal">
+						    <h5>2022 Slaymaker Service to Journalism</h5>
+						    <p>The Slaymaker Service to Journalism Award recognizes those who have significantly contributed to Indiana journalism and public service.</p>
+						    <p>In 2022, IPB News doubled down on community-responsive journalism. The award celebrates the efforts of every single member of the IPB News team.</p>
+						    <p>For my part, I aggregated and reported on questions about elections&nbsp;&mdash; in <a href="https://www.wboi.org/2022-09-21/what-do-i-need-on-election-day-the-midterm-election-is-nov-8" target="_blank">both an FAQ</a> and comprehensive <a href="https://ipbs.org/projects/voting-guide/" target="_blank">digital voting guide</a>&nbsp;&mdash; and <a href="https://www.wbaa.org/2022-09-13/what-will-indianas-new-abortion-law-mean-for-the-state-law-takes-effect-sept-15" target="_blank">the abortion ban</a> as it was set to take effect.</p> 
+					</div>
+				<div class="awards">
+					<a href="#murrow25" rel="modal:open">
+				    	<img src="assets/Session-game.png" alt="A piece of paper rests against a recycling bin. In a font reminiscent of 90s video games is written, 'Your bill has died of dysentery.'" width="100%"/>
+				    	<h6>2025 Region 7 Edward R. Murrow Excellence in Innovation</h6>
+				    </a>
+					</div>
+					<div id="murrow25" class="modal">
+						    <h5>2025 Region 7 Edward R. Murrow Excellence in Innovation</h5>
+						    <p><a href="https://ipbs.org/projects/indianalegislativetrail/" target="_blank"><strong>Can you survive Indiana&rsquo;s legislative session?: The game</strong></a></p>
+							<p>I&rsquo;d literally told my therapist that I was &ldquo;setting myself up for disappointment&rdquo; when I created a calendar reminder for the regional Murrow Awards. I wanted recognition for this project so badly. It&rsquo;s the culmination of a lot of work and passion for state government. And there are a bunch of silly little jokes just for me.&nbsp;</p>
+							<p>This is an innovative project. Not only because it&rsquo;s literally a game, but because of how much community feedback was incorporated. I took prototypes to community advocates to see what additional information they needed from the game. I badgered educators for their feedback.&nbsp;</p>
+							<p>And frankly, in the last 10 years, this is easily among what I&rsquo;m proudest of.</p>
+					</div>
+				<div class="awards">
+					<a href="#murrow24" rel="modal:open">
+				    	<img src="assets/2023-bill-tracker.png" alt="A screenshot of the bill tracker website. The headline reads: 2023 Indiana legislative session bill tracker. There is text under that and a three item row with bill numbers and their titles, with a light blue highlighted status of the legislation." width="100%"/>
+				    	<h6>2024 Region 7 Edward R. Murrow Excellence in Innovation</h6>
+				    </a>
+					</div>
+					<div id="murrow24" class="modal">
+						    <h5>2024 Region 7 Edward R. Murrow Excellence in Innovation</h5>
+						    <p><a href="https://ipbs.org/projects/2023billtracker/" target="_blank"><strong>2023 Indiana legislative session bill tracker</strong></a></p>
+							<p>I wouldn&rsquo;t have made a cogent argument that a bill tracker was particularly innovative. There are a bunch of them, though newsrooms have largely walked away from managing bill trackers.&nbsp;</p>
+							<p>This was designed to give people access to prior reporting and civic literacy resources. And hearing from advocates, activists and just folks who care about specific issues that this tool helped lower the barrier to entry into state government means even more than the prestigious recognition.</p>
+					</div>
+				<div class="awards">
+					<a href="#pmja25" rel="modal:open">
+				    	<img src="assets/2025-PMJA.jpg" alt="The 2025 PMJA Awards list. All the other entries have been blurred slightly. At the center the text says, 'Division D. First Place - Indiana Public Broadcasting News - 'Can you survive Indiana's legislative session?: The game'" width="100%"/>
+				    	<h6>2025 PMJA Award: Multimedia</h6>
+				    </a>
+					</div>
+					<div id="pmja25" class="modal">
+						    <h5>2025 PMJA Award: Multimedia</h5>
+						    <p><a href="https://ipbs.org/projects/indianalegislativetrail/" target="_blank"><strong>Can you survive Indiana&rsquo;s legislative session?: The game</strong></a></p>
+							<p>The game is the culmination of a lot of work and passion for state government. And there are a bunch of silly little jokes just for me. I literally taught myself animation and learned new skills across programming languages to build the game.</p>
+							<p>This is an innovative project, because of how much community feedback was incorporated. I took prototypes to community advocates to see what additional information they needed from the game. I badgered educators for their feedback.&nbsp;</p>
+							<p>And frankly, in the last 10 years, this is easily among what I&rsquo;m proudest of.</p>
+					</div>
+				<div class="awards">
+					<a href="#pmja24" rel="modal:open">
+				    	<img src="assets/Civically, Indiana image.jpeg" alt="A sillohuette of the Indiana Statehouse with the words 'Civically, Indiana' written in the foreground in white letters." width="100%">
+				    	<h6>2024 PMJA Award: Multimedia</h6>
+				    </a>
+					</div>
+					<div id="pmja24" class="modal">
+						    <h5>2024 PMJA Award: Multimedia</h5>
+						    <p><a href="https://ipbs.org/projects/civicallyindiana/" target="_blank"><strong><em>Civically, Indiana</em></strong></a></p>
+							<p>When building a microsite for <em>Civically, Indiana</em>, I wanted to hit a few priorities. I wanted to drive traffic back to our station partners. I wanted to create a searchable database of information. I wanted the project to gracefully degrade across devices. And I wanted to make it visually appealing.&nbsp;</p>
+							<p>I&rsquo;m really proud of how it turned out. I have so much affection for the project itself and the design of the microsite leans into an evolution of my work as a user-experience designer.</p>
+					</div>
+				<div class="awards">
+					<a href="#pmja23" rel="modal:open">
+				    	<img src="assets/Climate-Pact.jpg" alt="Students gather with signs on the steps outside of the Indiana Statehouse. The only poster not cut off by the crop says, I'll stop skipping school when you stop skipping the Climate Pact." width="100%">
+				    	<h6>2023 PMJA Award: Multimedia Presentation</h6>
+				    </a>
+					</div>
+					<div id="pmja23" class="modal">
+						    <h5>2023 PMJA Award: Multimedia Presentation</h5>
+						    <p><a href="https://ipbs.org/projects/climate-questions/" target="_blank"><strong>Climate questions</strong></a></p>
+							<p>I include this project on the award submission because I built and maintained the microsite. But I want to be super clear: Rebecca Thiele is the mastermind and driving force behind all of the work.</p>
+							<p>She came to me in 2022 with an idea. Rebecca wanted to create a clearinghouse of information about climate policy, responding directly to questions we received through community engagement tools. I think she thought I was going to fight her on it. So, when I immediately said, &ldquo;oh heck yeah&rdquo; I think I cut the wind from her sails.&nbsp;</p>
+							<p>I&rsquo;m really proud to have been part of this project and I&rsquo;m honored to share this award with her.&nbsp;</p>
+					</div>
+				<div class="awards">
+					<a href="#pmja18" rel="modal:open">
+				    	<img src="assets/cd-handshake.jpg" alt="The East Chicago Community Advisory Group has a stand at an annual park event. Two Black men in the foreground embrace one another." width="100%"/>
+				    	<h6>2018 PMJA Award: Multimedia Presentation</h6>
+				    </a>
+					</div>
+					<div id="pmja18" class="modal">
+						    <h5>2018 PMJA Award: Multimedia Presentation</h5>
+						    <p><a href="https://ipbs.org/projects/ec-oneyear/" target="_blank"><strong>Blood, Lead &amp; Soil: A Year In East Chicago</strong></a></p>
+							<p>My reporting team knew they wanted to do a one-hour radio special. I kind of tossed gasoline into the fire to build this project. I wanted to treat the special with the same kind respect as some of the largest projects from legacy media organizations.&nbsp;</p>
+							<p>Almost every member of the IPB News team spent time in East Chicago, Indiana, over the first year of its lead and arsenic crisis. The massive project collected previous reporting and original reporting leading up to the recognition of the crisis&rsquo;s one year.&nbsp;</p>
+							<p>I prioritized graceful degradation for this project because &mdash; while I wanted people across the state to see the story &mdash; I wanted to build something for East Chicago residents. I wanted them to see their story told respectfully, in tandem with them.</p>
+					</div>
+				<div class="awards">
+					<a href="#pmja17" rel="modal:open">
+				    	<img src="assets/EC-OrweilianWaterTower.jpg" alt="The East Chicago water tower looms over the U.S.S. Lead Superfund site. On the side of the tower is writte, 'For our future: East Chicago.'" width="100%"/>
+				    	<h6>2017 PMJA Award: Continuing Coverage</h6>
+				    </a>
+					</div>
+					<div id="pmja17" class="modal">
+						    <h5>2017 PMJA Award: Continuing Coverage</h5>
+						    <p><strong>Continuing Coverage: East Chicago lead and arsenic crisis</strong></p>
+							<p>Almost every member of the IPB News team spent time in East Chicago, Indiana, over the first year of its lead and arsenic crisis. I wanted to include this award because it was my first award for my own reporting contributions.&nbsp;</p>
+							<p>When I told my family about this recognition, I told them I won for &ldquo;taking a phone call from the CDC while in line for World of Tomorrow at Disney World.&rdquo;&nbsp;</p>
+							<p>We gathered hundreds of documents. We rebuilt a timeline of federal and state environmental agencies in the city. And I kind of bullied ATSDR for their bad data.&nbsp;</p>
+							<p>I&rsquo;m proud of the team effort dedicated to an underreported community. And I&rsquo;m grateful for the recognition we received for it.</p>
+					</div>
+			</div>
+<div id="contact">
+				<span class="highlight"><h3>&nbsp;Contact&nbsp;</h3></span>
+				<p>Think I do cool stuff? Want to chat? Find me on the internet!</p>
+				<div style=><b>Contact info:</b><table width="50%">
+						<tr>
+							<td>
+								<p><a href="mailto:lauren.ellen.chapman@gmail.com">
+									<img src="assets/email.png"></p>
+								</a>
+							</td>
+							<td>
+								<p>lauren.ellen.chapman@gmail.com</p>
+							</td>
+					</tr>
+					<tr>
+						<td>
+								<a href="https://twitter.com/laurenechapman_" target="_blank">
+									<img src="assets/twitter.png"></a>
+								</td>
+								<td>
+									<p>@laurenechapman_</p>
+								</td>
+					</tr>
+					<tr>
+							<td>
+								<a href="https://www.linkedin.com/pub/lauren-chapman/58/758/40"  target="_blank">
+									<img src="assets/linkedin.png"></a>
+								</td>
+								<td><p><a href="https://drive.google.com/file/d/1h06gTphF-mgSJLErGhvpM5xCgUA4fohB/view?usp=sharing" target="_blank">Download resume</a></p></td>
+							</tr>
+					</table></div>
+
+
+<!--
+						
 				<hr>
 				<h3>School referenda explainers</h3>
 				<p>Indiana&rsquo;s public schools rely heavily on school referenda &ndash; ballot initiatives that provide additional funding for schools beyond the property tax cap. Since 2009, nearly 60 school districts have passed a referendum. These two interactive graphics &ndash; a property tax calculator and a school district map &ndash; illustrate for voters the impact of these ballot initiatives.&nbsp;</p>
@@ -190,6 +613,56 @@ $(window).scroll(function() {
 					<center><p><em>This site was designed and developed by Lauren Chapman 2019</em></p></center>
 				</div>
 			</div>
+
+-->
 		</div>
+
+<!--Link to script libraries-->
+
+<!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        preloadImages: false,
+        lazyLoading: true,
+        spaceBetween: 30,
+        effect: 'fade',
+    });
+    </script>
+
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="https://unpkg.com/stein-expedite@0.1.0/dist/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+	document.querySelectorAll('.accordion__button').forEach(button => {
+		button.addEventListener('click', () => {
+			const accordionContent = button.nextElementSibling;
+
+			button.classList.toggle('accordion__button--active');
+
+			if (button.classList.contains('accordion__button--active')) {
+				accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+			} 
+
+			else {
+				accordionContent.style.maxHeight = 0;
+			}
+
+		});
+
+	});
+
+
+</script>
+
 	</body>
 </html>
