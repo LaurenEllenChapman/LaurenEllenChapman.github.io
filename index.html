@@ -29,27 +29,6 @@
         <meta property="og:url" content="laurenellenchapman.com" />
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>
-	$(document).ready(function() {
-var stickyNavTop = $('.nav').offset().top;
- 
-var stickyNav = function(){
-var scrollTop = $(window).scrollTop();
-      
-if (scrollTop > stickyNavTop) { 
-    $('.nav').addClass('sticky');
-} else {
-    $('.nav').removeClass('sticky'); 
-}
-};
- 
-stickyNav();
- 
-$(window).scroll(function() {
-    stickyNav();
-});
-});
-</script>
 
 	<link rel="shortcut icon" href="http://farm9.staticflickr.com/8707/17130120441_acfa6efcfd_b.jpg">	
 	</head>
@@ -515,106 +494,6 @@ $(window).scroll(function() {
 								<td><p><a href="https://drive.google.com/file/d/1h06gTphF-mgSJLErGhvpM5xCgUA4fohB/view?usp=sharing" target="_blank">Download resume</a></p></td>
 							</tr>
 					</table></div>
-
-
-<!--
-						
-				<hr>
-				<h3>School referenda explainers</h3>
-				<p>Indiana&rsquo;s public schools rely heavily on school referenda &ndash; ballot initiatives that provide additional funding for schools beyond the property tax cap. Since 2009, nearly 60 school districts have passed a referendum. These two interactive graphics &ndash; a property tax calculator and a school district map &ndash; illustrate for voters the impact of these ballot initiatives.&nbsp;</p>
-				<p>The IPB News education reporter and I brainstormed how to best illustrate some of the gaps in school funding for our audience ahead of the May 2019 election. I had make the referenda calculator for previous elections. But the school district map helped illustrate the geographic (and socioeconomic) differences for districts who can and can&rsquo;t get additional funding at the ballot box.</p>
-				<div class="lizzo">
-				<div id="wrapper">
-				<div id="left">
-					<iframe src="https://ipbs.org/projects/calculator-may19/" width="100%" height="525px" scrolling="no" frameborder="no"></iframe>
-				</div>
-				<div id="right">
-					<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1zvTOdg_NMOG0MHkxvny4K7gRg4KRVPTT" width="100%" height="525"></iframe>
-				</div>
-				</div>
-				</div>
-				<hr>
-				<h3>Whiteboard explainers</h3>
-				<p>Using a program called VideoScribe, I made my first whiteboard explainer for a feature on the Gulf of Mexico&rsquo;s dead zone, and how agricultural practices in Indiana affect it. The example here, on Indiana&rsquo;s net metering legislation, is one of my favorites.</p>
-				<iframe width="100%" height="525" src="https://www.youtube.com/embed/URDnbVf6uzo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p>Find more of my <a href="https://www.youtube.com/watch?v=hhXHo-bO70Y&list=PLEsHag5qa9Gr9jaf3oyfmCcnxe5P48E4g" target="_blank">whiteboard explainers here</a>.</p>
-				<hr>
-				<h3>2019 ILEARN scores database</h3>
-				<p>Indiana moved to a new standardized test in 2019, and these were the first scores from that change. The scores dropped from the previous standardized test, prompting lawmakers to call for changes to school funding and teacher performance calculations.&nbsp;</p>
-				<p>Our network can&rsquo;t afford something like Caspio to display data this way, so a simple Google Sheets-powered searchable database was the way to go.</p>	
-				<iframe src="https://ipbs.org/projects/2019-ilearn/index.html" width="100%" height="725px" scrolling="no" frameborder="no"></iframe>	
-				<hr>
-				<div class="lizzo">
-				<h3>Curtis Hill timeline</h3>
-				<p>The whole suite of Knightlab tools are incredible. But very few stand above the Knightlab Timeline.js project. Here&rsquo;s one of the ways we&rsquo;ve used that tool to track continuing coverage and news events.</p>
-				<iframe allowfullscreen="" frameborder="0" height="650" mozallowfullscreen="" src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1oe3JV_lIDk0CxwSHP3Ufx9Jz4EBQmMZl3pfbN8ipFKw&amp;font=Default&amp;lang=en&amp;initial_zoom=2&amp;height=650" webkitallowfullscreen="" width="100%"></iframe>
-				</div>
-				<hr>
-				<h3>Executive government explainer</h3>	
-				<p>I had played around with a photo gallery Github project and wasn&rsquo;t really in love with it. It wasn&rsquo;t responsive and wasn&rsquo;t a particularly good photo gallery. After taking some of the bits and pieces of code that I liked, I finally landed on a design for a clickable explainer that I liked.</p>
-				<iframe src="https://ipbs.org/projects/executive-government/index.html" width="100%" height="825px" scrolling="no" frameborder="no"></iframe>	
-				<hr>
-				<h3>Maritza Lopez interview</h3>
-				<p>I interviewed Maritiza as part of a larger project on East Chicago&rsquo;s lead and arsenic crisis. More than 1,000 people were involuntarily relocated from a public housing complex due to environmental contamination. Maritza lives on the Superfund site in a neighborhood just east of the now demolished housing complex.&nbsp;</p>
-				<iframe width="100%" height="425" src="https://www.youtube.com/embed/EhsQPp4AYsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				
-				<p>Along with my own shooting and editing video, I also work with reporters to edit their videos.&nbsp;</p>
-			</div>
-			<div class="content" id="micro">
-				<h2>Microsites</h2>
-				<p>Single topic speciality sites are some of my favorite things to produce. As a one-person digital team, not every specialty site I pitch is feasible. They&rsquo;re time consuming work, but the finished product always becomes something special.</p>
-				<h3>East Chicago One-Year project</h3>
-				<p>After covering the lead and arsenic crisis in East Chicago, the business and environment reporters on our reporting team wanted to put together a one-hour show to update our audience on what has happened so far. I worked with them as the health reporter, digital producer, video producer and FOIA librarian to build out this project into a truly multimedia story.</p>
-				<a href="https://ipbs.org/projects/ec-oneyear/" target="_blank"><img src="assets/ec-oneyear.png" width="100%"/></a>
-				<hr>
-				<h3>U.S. Senate voting guide</h3>
-				<p>As a statewide reporting team, we cover executive government and U.S. senator races. Our government reporter has, for years, put together two-ways for every candidate in those races. But we hadn&rsquo;t come up with a creative digital presentation outside of those two-ways.&nbsp;</p>
-				<p>This is technically a microsite, but I built it so it would also function as an embeddable iframe in the two-ways he was already doing, published to station websites.</p>
-				<iframe src="https://ipbs.org/projects/senate-voting-guide/" width="100%" height="825px" frameborder="no"></iframe>
-				<hr>	
-			</div>
-			<div class="content" id="report">
-					<h2>Reporting</h2>
-			<div class="lizzo">
-				<div id="wrapper">
-				<div id="left">
-					<img src="assets/Obama4.jpg" width="100%">
-					<p>Former President Barack Obama stumps for U.S. Sen. Joe Donnelly (D-Ind.) in Gary ahead of the 2018 election. (Lauren Chapman/IPB News)</p>
-				</div>
-				<div id="right">
-					<img src="assets/Thoughts+Prayers.jpg" width="100%">
-					<p>Moms Demand Action hosted a rally at the Indiana Statehouse following the Toledo and El Paso mass shootings. (Lauren Chapman/IPB News)</p>
-				</div>
-				</div>
-				<div id="wrapper">
-				<div id="left">
-					<img src="assets/Holcomb-Hogsett.jpg" width="100%">
-					<p>Democratic Mayor Joe Hogsett and Republican Gov. Eric Holcomb embrace at a memorial service for the late U.S. Sen. Richard Lugar. (Lauren Chapman/IPB News)</p>
-				</div>
-				<div id="right">
-					<img src="assets/Trump2.jpg" width="100%">
-					<p>President Donald Trump stumps for Mike Braun at Southport High School, just south of Indianapolis. (Lauren Chapman/IPB News)</p>
-				</div>
-				</div>
-			</div>
-					<p>Every so often, I&rsquo;m also a reporter. My background is more print-based, so doing a radio feature was a fear I wanted to overcome. Below are a few examples of my original reporting.</p>
-					<h3>Indiana's Religious Left</h3>
-					<p>This is actually my second NPR national feature. I covered some religious groups in the state, organizing for liberal causes like health care access, immigration and preschool. Immediately following the 2018 election, I found out they had developed a political action arm to help elect a few Democrats in contentious statehouse districts.</p>
-					<iframe src="https://www.npr.org/player/embed/673368278/674036743" width="100%" height="200" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe>
-					<p><a href="https://www.npr.org/2018/12/06/673368278/indianas-religious-left-flexes-its-political-muscle" target="_blank">Read more</a></p>
-					<hr>
-					<h3>Erika Fierro's Deportation</h3>
-					<p>I&rsquo;m the unofficial protest reporter for our team. Erika Fierro was brought to the U.S. as a 5-year-old. After the Trump administration&rsquo;s crackdown on immigration, her husband was detained and deported, and she fought to stay in the U.S. with their two American-born children.&nbsp;</p>
-					<p>This story is from the first of a few vigils from the Indianapolis faith community to rally with her and show her support.</p>
-					<img src="assets/Erika-Fierro.JPG" width="100%"/>
-					<audio controls preload="metadata" style=" width:100%;">
-					<source src="http://indiana.drupal.publicbroadcasting.net/sites/indiana/files/201804/deportation_vigil_web.mp3" type="audio/mpeg">
-					</audio>
-					<hr>
-					<center><p><em>This site was designed and developed by Lauren Chapman 2019</em></p></center>
-				</div>
-			</div>
-
--->
 		</div>
 
 <!--Link to script libraries-->
